@@ -1,0 +1,14 @@
+digraph "base::core::utility::EraseRemove"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="base::core::utility\l::EraseRemove",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="base::behavioral::Observable\l::Refresh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbase_1_1behavioral_1_1_observable.html#a04e53bb09ab731aecbb74f9fc6b6f00c",tooltip="リフレッシュ"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="game::Container::Refresh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgame_1_1_container.html#aedaa4d08664c4e68d3ee0f8b836f1d4a",tooltip="リフレッシュ"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="base::behavioral::Observable\l::RemoveObserver",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbase_1_1behavioral_1_1_observable.html#a70b73f0ebe24945a2404097cc8609c1e",tooltip="削除"];
+}

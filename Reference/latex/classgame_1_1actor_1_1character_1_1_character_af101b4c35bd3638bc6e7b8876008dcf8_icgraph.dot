@@ -1,0 +1,10 @@
+digraph "game::actor::character::Character::MakeShared"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="game::actor::character\l::Character::MakeShared",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="名前付きコンストラクタ"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="game::GameApplication\l::Initialize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgame_1_1_game_application.html#a4846686ab8b7a44acb96ff03b249e9e6",tooltip="初期化"];
+}

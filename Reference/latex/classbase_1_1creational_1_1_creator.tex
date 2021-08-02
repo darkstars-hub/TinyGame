@@ -1,0 +1,79 @@
+\hypertarget{classbase_1_1creational_1_1_creator}{}\doxysection{base\+::creational\+::Creator$<$ Base, Derived, Builder $>$ クラステンプレート}
+\label{classbase_1_1creational_1_1_creator}\index{base::creational::Creator$<$ Base, Derived, Builder $>$@{base::creational::Creator$<$ Base, Derived, Builder $>$}}
+
+
+{\ttfamily \#include $<$Creator.\+h$>$}
+
+
+
+base\+::creational\+::Creator$<$ Base, Derived, Builder $>$ の継承関係図
+% FIG 0
+
+
+base\+::creational\+::Creator$<$ Base, Derived, Builder $>$ 連携図
+% FIG 1
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbase_1_1creational_1_1_creator_ab34d8ee0716fe78f764637237d29dbd6}{Creator}} (const std\+::shared\+\_\+ptr$<$ Builder $>$ builder)
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classbase_1_1creational_1_1_creator_aaf54f754c3a2a9504c28d16b187e0ff0}{$\sim$\+Creator}} ()=default
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+virtual std\+::shared\+\_\+ptr$<$ Base $>$ \mbox{\hyperlink{classbase_1_1creational_1_1_creator_a0b3b96cb92ac501b7bf3b0f0d84d5275}{Create}} (void) const override
+\begin{DoxyCompactList}\small\item\em 作成 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{classbase_1_1creational_1_1_creator_ab34d8ee0716fe78f764637237d29dbd6}\label{classbase_1_1creational_1_1_creator_ab34d8ee0716fe78f764637237d29dbd6}} 
+\index{base::creational::Creator$<$ Base, Derived, Builder $>$@{base::creational::Creator$<$ Base, Derived, Builder $>$}!Creator@{Creator}}
+\index{Creator@{Creator}!base::creational::Creator$<$ Base, Derived, Builder $>$@{base::creational::Creator$<$ Base, Derived, Builder $>$}}
+\doxysubsubsection{\texorpdfstring{Creator()}{Creator()}}
+{\footnotesize\ttfamily template$<$typename Base , typename Derived , typename Builder $>$ \\
+\mbox{\hyperlink{classbase_1_1creational_1_1_creator}{base\+::creational\+::\+Creator}}$<$ Base, Derived, Builder $>$\+::\mbox{\hyperlink{classbase_1_1creational_1_1_creator}{Creator}} (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ Builder $>$}]{builder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コンストラクタ 
+
+
+\begin{DoxyParams}{引数}
+{\em builder} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbase_1_1creational_1_1_creator_aaf54f754c3a2a9504c28d16b187e0ff0}\label{classbase_1_1creational_1_1_creator_aaf54f754c3a2a9504c28d16b187e0ff0}} 
+\index{base::creational::Creator$<$ Base, Derived, Builder $>$@{base::creational::Creator$<$ Base, Derived, Builder $>$}!````~Creator@{$\sim$Creator}}
+\index{````~Creator@{$\sim$Creator}!base::creational::Creator$<$ Base, Derived, Builder $>$@{base::creational::Creator$<$ Base, Derived, Builder $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$Creator()}{~Creator()}}
+{\footnotesize\ttfamily template$<$typename Base , typename Derived , typename Builder $>$ \\
+virtual \mbox{\hyperlink{classbase_1_1creational_1_1_creator}{base\+::creational\+::\+Creator}}$<$ Base, Derived, Builder $>$\+::$\sim$\mbox{\hyperlink{classbase_1_1creational_1_1_creator}{Creator}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+デストラクタ 
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{classbase_1_1creational_1_1_creator_a0b3b96cb92ac501b7bf3b0f0d84d5275}\label{classbase_1_1creational_1_1_creator_a0b3b96cb92ac501b7bf3b0f0d84d5275}} 
+\index{base::creational::Creator$<$ Base, Derived, Builder $>$@{base::creational::Creator$<$ Base, Derived, Builder $>$}!Create@{Create}}
+\index{Create@{Create}!base::creational::Creator$<$ Base, Derived, Builder $>$@{base::creational::Creator$<$ Base, Derived, Builder $>$}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily template$<$typename Base , typename Derived , typename Builder $>$ \\
+virtual std\+::shared\+\_\+ptr$<$Base$>$ \mbox{\hyperlink{classbase_1_1creational_1_1_creator}{base\+::creational\+::\+Creator}}$<$ Base, Derived, Builder $>$\+::Create (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+作成 
+
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{classbase_1_1creational_1_1_i_creator_ab39eaffede3da9e93879a4a2407ea637}{base\+::creational\+::\+I\+Creator$<$ Base $>$}}を実装しています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/maila/\+Documents/\+Git\+Hub/\+Tiny\+Game/\+Tiny\+Game/\+Base/\+Creational/\mbox{\hyperlink{_creator_8h}{Creator.\+h}}\end{DoxyCompactItemize}

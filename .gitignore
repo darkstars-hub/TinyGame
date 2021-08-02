@@ -1,13 +1,19 @@
-# Undefined
-Undefined/
+# Directory
 
-# Debug
-Debug/
-# Release
-Release/
 # .vs
 .vs/
 
+# Debug
+Debug/
+
+# Release
+Release/
+
+# Undefined
+Undefined/
+
+
+# File
 # idb
 *.idb
 
@@ -22,3 +28,6 @@ Release/
 
 # lib
 *.lib
+
+# lnk
+*.lnk

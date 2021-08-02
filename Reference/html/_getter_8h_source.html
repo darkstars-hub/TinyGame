@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TinyGame: C:/Users/maila/Documents/GitHub/TinyGame/TinyGame/Base/Accessor/Getter.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TinyGame
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_abba61bbc914433e1c2a75a7082e7133.html">TinyGame</a></li><li class="navelem"><a class="el" href="dir_4e5098fc5bf43341f4ba0ce8acfd732c.html">Base</a></li><li class="navelem"><a class="el" href="dir_ec007e1bea98036b62ecec416e74daa2.html">Accessor</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Getter.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_getter_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef BASE_ACCESSOR_GETTER_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define BASE_ACCESSOR_GETTER_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;string_view&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebase_1_1accessor.html">base::accessor</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classbase_1_1accessor_1_1_getter.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbase_1_1accessor_1_1_getter.html">Getter</a> {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    T* _value;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classbase_1_1accessor_1_1_getter.html#a4a24f2c620e363c801c1400255996f98">   28</a></span>&#160;    <a class="code" href="classbase_1_1accessor_1_1_getter.html#a4a24f2c620e363c801c1400255996f98">Getter</a>(T&amp; value) :</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        _value(&amp;value) {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classbase_1_1accessor_1_1_getter.html#ae846e7a6911b0fbd305d9bd426d10616">   31</a></span>&#160;    <a class="code" href="classbase_1_1accessor_1_1_getter.html#ae846e7a6911b0fbd305d9bd426d10616">~Getter</a>() {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        _value = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classbase_1_1accessor_1_1_getter.html#aaf6b3780c8896342bdfc50356a5c90c6">   34</a></span>&#160;    <a class="code" href="classbase_1_1accessor_1_1_getter.html">Getter</a>&amp; <a class="code" href="classbase_1_1accessor_1_1_getter.html#aaf6b3780c8896342bdfc50356a5c90c6">operator =</a>(<span class="keyword">const</span> T&amp; value) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classbase_1_1accessor_1_1_getter.html#aaab43cf780ac348544d948a2bef99c35">   39</a></span>&#160;    <span class="keyword">operator</span> <span class="keyword">const</span> T&amp; (void) <span class="keyword">const</span> {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">return</span> *this-&gt;_value;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classbase_1_1accessor_1_1_getter.html#a9332b36d3ffebc379ec95068849ae1bd">   42</a></span>&#160;    T* <a class="code" href="classbase_1_1accessor_1_1_getter.html#a9332b36d3ffebc379ec95068849ae1bd">operator-&gt;</a>(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span> this-&gt;_value;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classbase_1_1accessor_1_1_getter.html#a372e225b43e814efc663335cbb298466">   45</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classbase_1_1accessor_1_1_getter.html#a372e225b43e814efc663335cbb298466">operator == </a>(<span class="keyword">const</span> T&amp; value)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">return</span> *this-&gt;_value == value;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classbase_1_1accessor_1_1_getter.html#a77f9dd7bfdbda03d40143af724e1cd6b">   48</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classbase_1_1accessor_1_1_getter.html#a372e225b43e814efc663335cbb298466">operator == </a>(<span class="keyword">const</span> <a class="code" href="classbase_1_1accessor_1_1_getter.html">Getter&lt;T&gt;</a>&amp; obj)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">return</span> *this-&gt;_value == *obj._value;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classbase_1_1accessor_1_1_getter.html#a96de94af51d8157bd8528e9e685ccfd6">   51</a></span>&#160;    <a class="code" href="classbase_1_1accessor_1_1_getter.html">Getter</a>&amp; <a class="code" href="classbase_1_1accessor_1_1_getter.html#a96de94af51d8157bd8528e9e685ccfd6">operator += </a>(T* value) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        *this-&gt;_value += *value;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classbase_1_1accessor_1_1_getter.html#ad88d2b0a212c19244dd191625eefe509">   55</a></span>&#160;    <a class="code" href="classbase_1_1accessor_1_1_getter.html">Getter</a>&amp; <a class="code" href="classbase_1_1accessor_1_1_getter.html#a96de94af51d8157bd8528e9e685ccfd6">operator += </a>(<span class="keyword">const</span> T&amp; value) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        *this-&gt;_value += value;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classbase_1_1accessor_1_1_getter_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html">   61</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbase_1_1accessor_1_1_getter.html">Getter</a>&lt;std::shared_ptr&lt;T&gt;&gt; {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    std::shared_ptr&lt;T&gt; _value;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classbase_1_1accessor_1_1_getter_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html#a0830be33188ef9835afcce736af6dc7b">   65</a></span>&#160;    <a class="code" href="classbase_1_1accessor_1_1_getter_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html#a0830be33188ef9835afcce736af6dc7b">Getter</a>(std::shared_ptr&lt;T&gt;&amp; value) :</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        _value(value) {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classbase_1_1accessor_1_1_getter_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html#a4eb90662a43187b6ce61d915105fb807">   68</a></span>&#160;    <a class="code" href="classbase_1_1accessor_1_1_getter_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html#a4eb90662a43187b6ce61d915105fb807">~Getter</a>() {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        _value = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classbase_1_1accessor_1_1_getter_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html#ad01810d5694fdf6a1eefe5e8a12cd6fd">   71</a></span>&#160;    <a class="code" href="classbase_1_1accessor_1_1_getter.html">Getter</a>&amp; <a class="code" href="classbase_1_1accessor_1_1_getter.html#aaf6b3780c8896342bdfc50356a5c90c6">operator =</a>(<span class="keyword">const</span> std::shared_ptr&lt;T&gt;&amp; value) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classbase_1_1accessor_1_1_getter_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html#a23b9d28cc0b3fdbf9bdfd9cd90005e95">   76</a></span>&#160;    <span class="keyword">operator</span> <span class="keyword">const</span> std::shared_ptr&lt;T&gt;&amp; (void) <span class="keyword">const</span> {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">return</span> this-&gt;_value;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classbase_1_1accessor_1_1_getter_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html#a08f813132e55780a2cb5457098ee42ce">   79</a></span>&#160;    std::shared_ptr&lt;T&gt; <a class="code" href="classbase_1_1accessor_1_1_getter_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html#a08f813132e55780a2cb5457098ee42ce">operator-&gt;</a>(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">return</span> this-&gt;_value;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif // !BASE_ACCESSOR_GETTER_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassbase_1_1accessor_1_1_getter_html_a4a24f2c620e363c801c1400255996f98"><div class="ttname"><a href="classbase_1_1accessor_1_1_getter.html#a4a24f2c620e363c801c1400255996f98">base::accessor::Getter::Getter</a></div><div class="ttdeci">Getter(T &amp;value)</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> Getter.h:28</div></div>
+<div class="ttc" id="aclassbase_1_1accessor_1_1_getter_3_01std_1_1shared__ptr_3_01_t_01_4_01_4_html_a0830be33188ef9835afcce736af6dc7b"><div class="ttname"><a href="classbase_1_1accessor_1_1_getter_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html#a0830be33188ef9835afcce736af6dc7b">base::accessor::Getter&lt; std::shared_ptr&lt; T &gt; &gt;::Getter</a></div><div class="ttdeci">Getter(std::shared_ptr&lt; T &gt; &amp;value)</div><div class="ttdef"><b>Definition:</b> Getter.h:65</div></div>
+<div class="ttc" id="aclassbase_1_1accessor_1_1_getter_html"><div class="ttname"><a href="classbase_1_1accessor_1_1_getter.html">base::accessor::Getter</a></div><div class="ttdef"><b>Definition:</b> Getter.h:19</div></div>
+<div class="ttc" id="anamespacebase_1_1accessor_html"><div class="ttname"><a href="namespacebase_1_1accessor.html">base::accessor</a></div><div class="ttdef"><b>Definition:</b> Accessor.h:16</div></div>
+<div class="ttc" id="aclassbase_1_1accessor_1_1_getter_html_a96de94af51d8157bd8528e9e685ccfd6"><div class="ttname"><a href="classbase_1_1accessor_1_1_getter.html#a96de94af51d8157bd8528e9e685ccfd6">base::accessor::Getter::operator+=</a></div><div class="ttdeci">Getter &amp; operator+=(T *value)</div><div class="ttdef"><b>Definition:</b> Getter.h:51</div></div>
+<div class="ttc" id="aclassbase_1_1accessor_1_1_getter_html_a372e225b43e814efc663335cbb298466"><div class="ttname"><a href="classbase_1_1accessor_1_1_getter.html#a372e225b43e814efc663335cbb298466">base::accessor::Getter::operator==</a></div><div class="ttdeci">bool operator==(const T &amp;value) const</div><div class="ttdef"><b>Definition:</b> Getter.h:45</div></div>
+<div class="ttc" id="aclassbase_1_1accessor_1_1_getter_html_a9332b36d3ffebc379ec95068849ae1bd"><div class="ttname"><a href="classbase_1_1accessor_1_1_getter.html#a9332b36d3ffebc379ec95068849ae1bd">base::accessor::Getter::operator-&gt;</a></div><div class="ttdeci">T * operator-&gt;(void) const</div><div class="ttdef"><b>Definition:</b> Getter.h:42</div></div>
+<div class="ttc" id="aclassbase_1_1accessor_1_1_getter_html_aaf6b3780c8896342bdfc50356a5c90c6"><div class="ttname"><a href="classbase_1_1accessor_1_1_getter.html#aaf6b3780c8896342bdfc50356a5c90c6">base::accessor::Getter::operator=</a></div><div class="ttdeci">Getter &amp; operator=(const T &amp;value)=delete</div></div>
+<div class="ttc" id="aclassbase_1_1accessor_1_1_getter_3_01std_1_1shared__ptr_3_01_t_01_4_01_4_html_a08f813132e55780a2cb5457098ee42ce"><div class="ttname"><a href="classbase_1_1accessor_1_1_getter_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html#a08f813132e55780a2cb5457098ee42ce">base::accessor::Getter&lt; std::shared_ptr&lt; T &gt; &gt;::operator-&gt;</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; operator-&gt;(void) const</div><div class="ttdef"><b>Definition:</b> Getter.h:79</div></div>
+<div class="ttc" id="aclassbase_1_1accessor_1_1_getter_3_01std_1_1shared__ptr_3_01_t_01_4_01_4_html_a4eb90662a43187b6ce61d915105fb807"><div class="ttname"><a href="classbase_1_1accessor_1_1_getter_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html#a4eb90662a43187b6ce61d915105fb807">base::accessor::Getter&lt; std::shared_ptr&lt; T &gt; &gt;::~Getter</a></div><div class="ttdeci">~Getter()</div><div class="ttdef"><b>Definition:</b> Getter.h:68</div></div>
+<div class="ttc" id="aclassbase_1_1accessor_1_1_getter_html_ae846e7a6911b0fbd305d9bd426d10616"><div class="ttname"><a href="classbase_1_1accessor_1_1_getter.html#ae846e7a6911b0fbd305d9bd426d10616">base::accessor::Getter::~Getter</a></div><div class="ttdeci">~Getter()</div><div class="ttdef"><b>Definition:</b> Getter.h:31</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

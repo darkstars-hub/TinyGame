@@ -1,9 +1,8 @@
-//! 
+//!
 //! @file CharacterConfiguration.h
-//! @brief character's configuration parameters
+//! @brief キャラクタークラスを構成するパラメータ
 //! @author darkstar
-//! @date 2021/08/02
-//! @details none
+//! @date 2021_08_02
 //! 
 #ifndef GAME_ACTOR_CHARACTER_CHARACTER_CONFIGURATION_H
 #define GAME_ACTOR_CHARACTER_CHARACTER_CONFIGURATION_H

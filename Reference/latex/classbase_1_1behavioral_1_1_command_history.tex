@@ -1,0 +1,95 @@
+\hypertarget{classbase_1_1behavioral_1_1_command_history}{}\doxysection{base\+::behavioral\+::Command\+History クラス}
+\label{classbase_1_1behavioral_1_1_command_history}\index{base::behavioral::CommandHistory@{base::behavioral::CommandHistory}}
+
+
+{\ttfamily \#include $<$Command\+History.\+h$>$}
+
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbase_1_1behavioral_1_1_command_history_a114b63f0d9e3fc71a5bc7069483b4604}{Command\+History}} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbase_1_1behavioral_1_1_command_history_ae34357af5c6c9404bab90a2f667cf471}{$\sim$\+Command\+History}} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classbase_1_1behavioral_1_1_command_history_aeebce7baf6badd14463798b56cae3705}{Undo}} (void)
+\begin{DoxyCompactList}\small\item\em 戻る \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classbase_1_1behavioral_1_1_command_history_ac3bd4a7b621b72ba60817acd4447e0a9}{Redo}} (void)
+\begin{DoxyCompactList}\small\item\em 戻す \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classbase_1_1behavioral_1_1_command_history_aa7394ececd8a740f1e5390966b6da76b}{Record}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classbase_1_1behavioral_1_1_command}{base\+::behavioral\+::\+Command}} $>$ \&ptr)
+\begin{DoxyCompactList}\small\item\em 登録 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{classbase_1_1behavioral_1_1_command_history_a114b63f0d9e3fc71a5bc7069483b4604}\label{classbase_1_1behavioral_1_1_command_history_a114b63f0d9e3fc71a5bc7069483b4604}} 
+\index{base::behavioral::CommandHistory@{base::behavioral::CommandHistory}!CommandHistory@{CommandHistory}}
+\index{CommandHistory@{CommandHistory}!base::behavioral::CommandHistory@{base::behavioral::CommandHistory}}
+\doxysubsubsection{\texorpdfstring{CommandHistory()}{CommandHistory()}}
+{\footnotesize\ttfamily base\+::behavioral\+::\+Command\+History\+::\+Command\+History (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+コンストラクタ 
+
+\mbox{\Hypertarget{classbase_1_1behavioral_1_1_command_history_ae34357af5c6c9404bab90a2f667cf471}\label{classbase_1_1behavioral_1_1_command_history_ae34357af5c6c9404bab90a2f667cf471}} 
+\index{base::behavioral::CommandHistory@{base::behavioral::CommandHistory}!````~CommandHistory@{$\sim$CommandHistory}}
+\index{````~CommandHistory@{$\sim$CommandHistory}!base::behavioral::CommandHistory@{base::behavioral::CommandHistory}}
+\doxysubsubsection{\texorpdfstring{$\sim$CommandHistory()}{~CommandHistory()}}
+{\footnotesize\ttfamily base\+::behavioral\+::\+Command\+History\+::$\sim$\+Command\+History (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+デストラクタ 
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{classbase_1_1behavioral_1_1_command_history_aa7394ececd8a740f1e5390966b6da76b}\label{classbase_1_1behavioral_1_1_command_history_aa7394ececd8a740f1e5390966b6da76b}} 
+\index{base::behavioral::CommandHistory@{base::behavioral::CommandHistory}!Record@{Record}}
+\index{Record@{Record}!base::behavioral::CommandHistory@{base::behavioral::CommandHistory}}
+\doxysubsubsection{\texorpdfstring{Record()}{Record()}}
+{\footnotesize\ttfamily bool base\+::behavioral\+::\+Command\+History\+::\+Record (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classbase_1_1behavioral_1_1_command}{base\+::behavioral\+::\+Command}} $>$ \&}]{ptr }\end{DoxyParamCaption})}
+
+
+
+登録 
+
+
+\begin{DoxyParams}{引数}
+{\em ptr} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbase_1_1behavioral_1_1_command_history_ac3bd4a7b621b72ba60817acd4447e0a9}\label{classbase_1_1behavioral_1_1_command_history_ac3bd4a7b621b72ba60817acd4447e0a9}} 
+\index{base::behavioral::CommandHistory@{base::behavioral::CommandHistory}!Redo@{Redo}}
+\index{Redo@{Redo}!base::behavioral::CommandHistory@{base::behavioral::CommandHistory}}
+\doxysubsubsection{\texorpdfstring{Redo()}{Redo()}}
+{\footnotesize\ttfamily bool base\+::behavioral\+::\+Command\+History\+::\+Redo (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+戻す 
+
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbase_1_1behavioral_1_1_command_history_aeebce7baf6badd14463798b56cae3705}\label{classbase_1_1behavioral_1_1_command_history_aeebce7baf6badd14463798b56cae3705}} 
+\index{base::behavioral::CommandHistory@{base::behavioral::CommandHistory}!Undo@{Undo}}
+\index{Undo@{Undo}!base::behavioral::CommandHistory@{base::behavioral::CommandHistory}}
+\doxysubsubsection{\texorpdfstring{Undo()}{Undo()}}
+{\footnotesize\ttfamily bool base\+::behavioral\+::\+Command\+History\+::\+Undo (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+戻る 
+
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/maila/\+Documents/\+Git\+Hub/\+Tiny\+Game/\+Tiny\+Game/\+Base/\+Behavioral/\mbox{\hyperlink{_command_history_8h}{Command\+History.\+h}}\item 
+C\+:/\+Users/maila/\+Documents/\+Git\+Hub/\+Tiny\+Game/\+Tiny\+Game/\+Base/\+Behavioral/\mbox{\hyperlink{_command_history_8cpp}{Command\+History.\+cpp}}\end{DoxyCompactItemize}

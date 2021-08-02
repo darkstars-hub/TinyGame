@@ -1,0 +1,19 @@
+digraph "C:/Users/maila/Documents/GitHub/TinyGame/TinyGame/Game" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_abba61bbc914433e1c2a75a7082e7133 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="TinyGame" fontname="Helvetica", fontsize="10", URL="dir_abba61bbc914433e1c2a75a7082e7133.html"]
+  subgraph clusterdir_04eaaac0ff0817fe577b47fae5bf9f4f {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_04eaaac0ff0817fe577b47fae5bf9f4f.html"];
+    dir_04eaaac0ff0817fe577b47fae5bf9f4f [shape=plaintext label="Game"];
+    dir_2cf8f863bc17b6a2726309cd38e950ea [shape=box label="Actor" color="red" fillcolor="white" style="filled" URL="dir_2cf8f863bc17b6a2726309cd38e950ea.html"];
+    dir_eca26fb36d71abe6fa7400be41eb1374 [shape=box label="Gimmick" color="black" fillcolor="white" style="filled" URL="dir_eca26fb36d71abe6fa7400be41eb1374.html"];
+    dir_55b3ab546b08e36647a2c77df7cb9565 [shape=box label="Parameter" color="red" fillcolor="white" style="filled" URL="dir_55b3ab546b08e36647a2c77df7cb9565.html"];
+  }
+  }
+  dir_4e5098fc5bf43341f4ba0ce8acfd732c [shape=box label="Base" fillcolor="white" style="filled" color="red" URL="dir_4e5098fc5bf43341f4ba0ce8acfd732c.html"];
+  dir_04eaaac0ff0817fe577b47fae5bf9f4f->dir_2cf8f863bc17b6a2726309cd38e950ea [headlabel="1", labeldistance=1.5 headhref="dir_000019_000020.html"];
+  dir_2cf8f863bc17b6a2726309cd38e950ea->dir_4e5098fc5bf43341f4ba0ce8acfd732c [headlabel="3", labeldistance=1.5 headhref="dir_000020_000001.html"];
+  dir_2cf8f863bc17b6a2726309cd38e950ea->dir_55b3ab546b08e36647a2c77df7cb9565 [headlabel="1", labeldistance=1.5 headhref="dir_000020_000023.html"];
+}

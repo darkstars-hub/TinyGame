@@ -1,0 +1,147 @@
+\hypertarget{classbase_1_1behavioral_1_1_state_machine}{}\doxysection{base\+::behavioral\+::State\+Machine クラス}
+\label{classbase_1_1behavioral_1_1_state_machine}\index{base::behavioral::StateMachine@{base::behavioral::StateMachine}}
+
+
+{\ttfamily \#include $<$State\+Machine.\+h$>$}
+
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string\+\_\+view \mbox{\hyperlink{classbase_1_1behavioral_1_1_state_machine_a9ebc0c15cce5ee66470eecc34bc31c51}{Get\+Current\+State\+Name}} (void) const
+\begin{DoxyCompactList}\small\item\em ゲッター \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classbase_1_1behavioral_1_1_state_machine_ac71f286fba55a196395d975533ec9108}{Enable\+State}} (void) const
+\begin{DoxyCompactList}\small\item\em 判定 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T , typename... Args$>$ }\\void \mbox{\hyperlink{classbase_1_1behavioral_1_1_state_machine_a2787d87a8e8bc70c9fb744e94ed0a624}{Register\+State}} (Args \&\&... params)
+\begin{DoxyCompactList}\small\item\em 登録 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbase_1_1behavioral_1_1_state_machine_ace92f992141eac65754b78db5a0fec3c}{Register\+State}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classbase_1_1behavioral_1_1_state}{base\+::behavioral\+::\+State}} $>$ \&ptr)
+\begin{DoxyCompactList}\small\item\em 登録 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbase_1_1behavioral_1_1_state_machine_aba199842269aa3cee0fcbf2690c893a8}{Change\+State}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em 変更 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbase_1_1behavioral_1_1_state_machine_a7e29b2061952b075663280bee9c5c0e6}{Update}} (float delta\+\_\+time)
+\begin{DoxyCompactList}\small\item\em 追加 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbase_1_1behavioral_1_1_state_machine_a8b67557dd12fd483c0c5922e91715ca6}{Release}} (void)
+\begin{DoxyCompactList}\small\item\em 解放 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{classbase_1_1behavioral_1_1_state_machine_aba199842269aa3cee0fcbf2690c893a8}\label{classbase_1_1behavioral_1_1_state_machine_aba199842269aa3cee0fcbf2690c893a8}} 
+\index{base::behavioral::StateMachine@{base::behavioral::StateMachine}!ChangeState@{ChangeState}}
+\index{ChangeState@{ChangeState}!base::behavioral::StateMachine@{base::behavioral::StateMachine}}
+\doxysubsubsection{\texorpdfstring{ChangeState()}{ChangeState()}}
+{\footnotesize\ttfamily void base\+::behavioral\+::\+State\+Machine\+::\+Change\+State (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+変更 
+
+
+\begin{DoxyParams}{引数}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbase_1_1behavioral_1_1_state_machine_ac71f286fba55a196395d975533ec9108}\label{classbase_1_1behavioral_1_1_state_machine_ac71f286fba55a196395d975533ec9108}} 
+\index{base::behavioral::StateMachine@{base::behavioral::StateMachine}!EnableState@{EnableState}}
+\index{EnableState@{EnableState}!base::behavioral::StateMachine@{base::behavioral::StateMachine}}
+\doxysubsubsection{\texorpdfstring{EnableState()}{EnableState()}}
+{\footnotesize\ttfamily bool base\+::behavioral\+::\+State\+Machine\+::\+Enable\+State (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+判定 
+
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbase_1_1behavioral_1_1_state_machine_a9ebc0c15cce5ee66470eecc34bc31c51}\label{classbase_1_1behavioral_1_1_state_machine_a9ebc0c15cce5ee66470eecc34bc31c51}} 
+\index{base::behavioral::StateMachine@{base::behavioral::StateMachine}!GetCurrentStateName@{GetCurrentStateName}}
+\index{GetCurrentStateName@{GetCurrentStateName}!base::behavioral::StateMachine@{base::behavioral::StateMachine}}
+\doxysubsubsection{\texorpdfstring{GetCurrentStateName()}{GetCurrentStateName()}}
+{\footnotesize\ttfamily std\+::string\+\_\+view base\+::behavioral\+::\+State\+Machine\+::\+Get\+Current\+State\+Name (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+ゲッター 
+
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbase_1_1behavioral_1_1_state_machine_a2787d87a8e8bc70c9fb744e94ed0a624}\label{classbase_1_1behavioral_1_1_state_machine_a2787d87a8e8bc70c9fb744e94ed0a624}} 
+\index{base::behavioral::StateMachine@{base::behavioral::StateMachine}!RegisterState@{RegisterState}}
+\index{RegisterState@{RegisterState}!base::behavioral::StateMachine@{base::behavioral::StateMachine}}
+\doxysubsubsection{\texorpdfstring{RegisterState()}{RegisterState()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename... Args$>$ \\
+void base\+::behavioral\+::\+State\+Machine\+::\+Register\+State (\begin{DoxyParamCaption}\item[{Args \&\&...}]{params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+登録 
+
+
+\begin{DoxyTemplParams}{テンプレート引数}
+{\em T} & \\
+\hline
+{\em ...\+Args} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{引数}
+{\em ...\+params} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbase_1_1behavioral_1_1_state_machine_ace92f992141eac65754b78db5a0fec3c}\label{classbase_1_1behavioral_1_1_state_machine_ace92f992141eac65754b78db5a0fec3c}} 
+\index{base::behavioral::StateMachine@{base::behavioral::StateMachine}!RegisterState@{RegisterState}}
+\index{RegisterState@{RegisterState}!base::behavioral::StateMachine@{base::behavioral::StateMachine}}
+\doxysubsubsection{\texorpdfstring{RegisterState()}{RegisterState()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void base\+::behavioral\+::\+State\+Machine\+::\+Register\+State (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classbase_1_1behavioral_1_1_state}{base\+::behavioral\+::\+State}} $>$ \&}]{ptr }\end{DoxyParamCaption})}
+
+
+
+登録 
+
+
+\begin{DoxyParams}{引数}
+{\em ptr} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbase_1_1behavioral_1_1_state_machine_a8b67557dd12fd483c0c5922e91715ca6}\label{classbase_1_1behavioral_1_1_state_machine_a8b67557dd12fd483c0c5922e91715ca6}} 
+\index{base::behavioral::StateMachine@{base::behavioral::StateMachine}!Release@{Release}}
+\index{Release@{Release}!base::behavioral::StateMachine@{base::behavioral::StateMachine}}
+\doxysubsubsection{\texorpdfstring{Release()}{Release()}}
+{\footnotesize\ttfamily void base\+::behavioral\+::\+State\+Machine\+::\+Release (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+解放 
+
+\mbox{\Hypertarget{classbase_1_1behavioral_1_1_state_machine_a7e29b2061952b075663280bee9c5c0e6}\label{classbase_1_1behavioral_1_1_state_machine_a7e29b2061952b075663280bee9c5c0e6}} 
+\index{base::behavioral::StateMachine@{base::behavioral::StateMachine}!Update@{Update}}
+\index{Update@{Update}!base::behavioral::StateMachine@{base::behavioral::StateMachine}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void base\+::behavioral\+::\+State\+Machine\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+追加 
+
+
+\begin{DoxyParams}{引数}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+
+
+削除
+
+更新
+
+
+\begin{DoxyParams}{引数}
+{\em delta\+\_\+time} & \\
+\hline
+\end{DoxyParams}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/maila/\+Documents/\+Git\+Hub/\+Tiny\+Game/\+Tiny\+Game/\+Base/\+Behavioral/\mbox{\hyperlink{_state_machine_8h}{State\+Machine.\+h}}\item 
+C\+:/\+Users/maila/\+Documents/\+Git\+Hub/\+Tiny\+Game/\+Tiny\+Game/\+Base/\+Behavioral/\mbox{\hyperlink{_state_machine_8cpp}{State\+Machine.\+cpp}}\end{DoxyCompactItemize}

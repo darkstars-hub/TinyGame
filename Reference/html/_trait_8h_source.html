@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TinyGame: C:/Users/maila/Documents/GitHub/TinyGame/TinyGame/Base/Core/Trait.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TinyGame
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_abba61bbc914433e1c2a75a7082e7133.html">TinyGame</a></li><li class="navelem"><a class="el" href="dir_4e5098fc5bf43341f4ba0ce8acfd732c.html">Base</a></li><li class="navelem"><a class="el" href="dir_dac6b5bc95e7c2b3f2f0634accedfc6a.html">Core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Trait.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_trait_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BASE_CORE_TRAIT_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define BASE_CORE_TRAIT_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="namespacebase_1_1core_1_1trait.html">    8</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebase_1_1core_1_1trait.html">base::core::trait</a> {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class </span>Head, <span class="keyword">class</span>...Tail&gt;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structbase_1_1core_1_1trait_1_1_arg_separator.html">   15</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbase_1_1core_1_1trait_1_1_arg_separator.html">ArgSeparator</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structbase_1_1core_1_1trait_1_1_arg_separator.html#aaf3e9f82fdc2322e2a8e88d30fcef7f7">   16</a></span>&#160;    <span class="keyword">typedef</span> Head <a class="code" href="structbase_1_1core_1_1trait_1_1_arg_separator.html#aaf3e9f82fdc2322e2a8e88d30fcef7f7">head</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structbase_1_1core_1_1trait_1_1_arg_separator.html#af12c8f9320682e0f1ee73ec3cf3e207a">   17</a></span>&#160;    <span class="keyword">typedef</span> std::tuple&lt;Tail...&gt; <a class="code" href="structbase_1_1core_1_1trait_1_1_arg_separator.html#af12c8f9320682e0f1ee73ec3cf3e207a">tail</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;};</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span>...Args&gt;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structbase_1_1core_1_1trait_1_1_arg_list.html">   20</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbase_1_1core_1_1trait_1_1_arg_list.html">ArgList</a> {</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structbase_1_1core_1_1trait_1_1_arg_list.html#ab00e7718ccad232ad96671cfac1585f2">   21</a></span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> <a class="code" href="structbase_1_1core_1_1trait_1_1_arg_separator.html">ArgSeparator</a>&lt;Args...&gt;<a class="code" href="structbase_1_1core_1_1trait_1_1_arg_list.html#ab00e7718ccad232ad96671cfac1585f2">::head</a> <a class="code" href="structbase_1_1core_1_1trait_1_1_arg_list.html#ab00e7718ccad232ad96671cfac1585f2">head</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structbase_1_1core_1_1trait_1_1_arg_list.html#a578bda82d708b30e0c313b6a74c241dc">   22</a></span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> <a class="code" href="structbase_1_1core_1_1trait_1_1_arg_separator.html">ArgSeparator</a>&lt;Args...&gt;<a class="code" href="structbase_1_1core_1_1trait_1_1_arg_list.html#a578bda82d708b30e0c313b6a74c241dc">::tail</a> <a class="code" href="structbase_1_1core_1_1trait_1_1_arg_list.html#a578bda82d708b30e0c313b6a74c241dc">tail</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="structbase_1_1core_1_1trait_1_1is__shared.html">   27</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbase_1_1core_1_1trait_1_1is__shared.html">is_shared</a> : std::false_type {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structbase_1_1core_1_1trait_1_1is__shared_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html">   30</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbase_1_1core_1_1trait_1_1is__shared.html">is_shared</a>&lt;std::shared_ptr&lt;T&gt;&gt; : std::true_type {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structbase_1_1core_1_1trait_1_1remove__shared.html">   33</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbase_1_1core_1_1trait_1_1remove__shared.html">remove_shared</a> {</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="structbase_1_1core_1_1trait_1_1remove__shared.html#a64154a41ec761db489eeef6a756abd2c">   34</a></span>&#160;    <span class="keyword">typedef</span> T <a class="code" href="structbase_1_1core_1_1trait_1_1remove__shared.html#a64154a41ec761db489eeef6a756abd2c">type</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="structbase_1_1core_1_1trait_1_1remove__shared_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html">   37</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbase_1_1core_1_1trait_1_1remove__shared.html">remove_shared</a>&lt;std::shared_ptr&lt;T&gt;&gt; {</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="structbase_1_1core_1_1trait_1_1remove__shared_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html#a1809dde057514f5fa9b77eb2e88eae92">   38</a></span>&#160;    <span class="keyword">typedef</span> T <a class="code" href="structbase_1_1core_1_1trait_1_1remove__shared_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html#a1809dde057514f5fa9b77eb2e88eae92">type</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;template &lt;typename Tuple, typename T, int i = std::tuple_size&lt;Tuple&gt;::value - 1&gt;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="structbase_1_1core_1_1trait_1_1tuple__index.html">   47</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbase_1_1core_1_1trait_1_1tuple__index.html">tuple_index</a> {</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="structbase_1_1core_1_1trait_1_1tuple__index.html#a0bf6bb5bd534ad322fa7f3ec57354c04">   48</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="structbase_1_1core_1_1trait_1_1tuple__index.html#a0bf6bb5bd534ad322fa7f3ec57354c04">value</a> = std::is_same&lt;typename std::tuple_element&lt;i, Tuple&gt;::type, T&gt;<a class="code" href="structbase_1_1core_1_1trait_1_1tuple__index.html#a0bf6bb5bd534ad322fa7f3ec57354c04">::value</a> ?</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        i :</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="structbase_1_1core_1_1trait_1_1tuple__index.html">tuple_index</a>&lt;Tuple, T, i - 1&gt;<a class="code" href="structbase_1_1core_1_1trait_1_1tuple__index.html#a0bf6bb5bd534ad322fa7f3ec57354c04">::value</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Tuple, <span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="structbase_1_1core_1_1trait_1_1tuple__index_3_01_tuple_00_01_t_00_01-1_01_4.html">   58</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbase_1_1core_1_1trait_1_1tuple__index.html">tuple_index</a>&lt;Tuple, T, -1&gt; {</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="structbase_1_1core_1_1trait_1_1tuple__index_3_01_tuple_00_01_t_00_01-1_01_4.html#a2d86fba1c215f1bbe27fae0bbaa73a8b">   59</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="structbase_1_1core_1_1trait_1_1tuple__index.html#a0bf6bb5bd534ad322fa7f3ec57354c04">value</a> = -1;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="structbase_1_1core_1_1trait_1_1has__func__input__impl.html">   64</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbase_1_1core_1_1trait_1_1has__func__input__impl.html">has_func_input_impl</a> {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class </span>T, <span class="keyword">class</span>...Args&gt;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="structbase_1_1core_1_1trait_1_1has__func__input__impl.html#a2335452d1633980bf783ae93b6bafc9d">   66</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code" href="structbase_1_1core_1_1trait_1_1has__func__input__impl.html#a2335452d1633980bf783ae93b6bafc9d">check</a>(T&amp;&amp; x, Args&amp;&amp;...args)-&gt;decltype(x.Input(args...), std::true_type{});</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="structbase_1_1core_1_1trait_1_1has__func__input__impl.html#a07ee8f3a335f09569ebe477b6a6a491c">   68</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code" href="structbase_1_1core_1_1trait_1_1has__func__input__impl.html#a07ee8f3a335f09569ebe477b6a6a491c">check</a>(...)-&gt;std::false_type;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class </span>T, <span class="keyword">class</span>...Args&gt;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classbase_1_1core_1_1trait_1_1has__func__input.html">   75</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbase_1_1core_1_1trait_1_1has__func__input.html">has_func_input</a> : <span class="keyword">public</span> decltype(has_func_input_impl::check&lt;T&gt;(std::declval&lt;T&gt;(), std::forward&lt;Args&gt;(Args())...)) {};</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="structbase_1_1core_1_1trait_1_1has__func__initialize__impl.html">   79</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbase_1_1core_1_1trait_1_1has__func__initialize__impl.html">has_func_initialize_impl</a> {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class </span>T, <span class="keyword">class</span>...Args&gt;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="structbase_1_1core_1_1trait_1_1has__func__initialize__impl.html#a5fec2fdd6a2c887cbe700df2f90f0109">   81</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code" href="structbase_1_1core_1_1trait_1_1has__func__initialize__impl.html#a5fec2fdd6a2c887cbe700df2f90f0109">check</a>(T&amp;&amp; x, Args&amp;&amp;...args)-&gt;decltype(x.Initialize(args...), std::true_type{});</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="structbase_1_1core_1_1trait_1_1has__func__initialize__impl.html#a15f884c1b016ecf10b181f01bef23ce1">   83</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code" href="structbase_1_1core_1_1trait_1_1has__func__initialize__impl.html#a15f884c1b016ecf10b181f01bef23ce1">check</a>(...)-&gt;std::false_type;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class </span>T, <span class="keyword">class</span>...Args&gt;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classbase_1_1core_1_1trait_1_1has__func__initialize.html">   90</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbase_1_1core_1_1trait_1_1has__func__initialize.html">has_func_initialize</a> : <span class="keyword">public</span> decltype(has_func_initialize_impl::check&lt;T&gt;(std::declval&lt;T&gt;(), std::forward&lt;Args&gt;(Args())...)) {};</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="structbase_1_1core_1_1trait_1_1has__func__update__impl.html">   94</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbase_1_1core_1_1trait_1_1has__func__update__impl.html">has_func_update_impl</a> {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class </span>T, <span class="keyword">class</span>...Args&gt;</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="structbase_1_1core_1_1trait_1_1has__func__update__impl.html#a41c80c74df2f92100cec9f76c6e0319c">   96</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code" href="structbase_1_1core_1_1trait_1_1has__func__update__impl.html#a41c80c74df2f92100cec9f76c6e0319c">check</a>(T&amp;&amp; x, Args&amp;&amp;...args)-&gt;decltype(x.Update(args...), std::true_type{});</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="structbase_1_1core_1_1trait_1_1has__func__update__impl.html#a6821f80dba91937b335a5b821c09114b">   98</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code" href="structbase_1_1core_1_1trait_1_1has__func__update__impl.html#a6821f80dba91937b335a5b821c09114b">check</a>(...)-&gt;std::false_type;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;};</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class </span>T, <span class="keyword">class</span>...Args&gt;</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classbase_1_1core_1_1trait_1_1has__func__update.html">  105</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbase_1_1core_1_1trait_1_1has__func__update.html">has_func_update</a> : <span class="keyword">public</span> decltype(has_func_update_impl::check&lt;T&gt;(std::declval&lt;T&gt;(), std::forward&lt;Args&gt;(Args())...)) {};</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="structbase_1_1core_1_1trait_1_1has__func__render__impl.html">  109</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbase_1_1core_1_1trait_1_1has__func__render__impl.html">has_func_render_impl</a> {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class </span>T, <span class="keyword">class</span>...Args&gt;</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="structbase_1_1core_1_1trait_1_1has__func__render__impl.html#a924fd3e4b0bcc4a55383dd446d57882b">  111</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code" href="structbase_1_1core_1_1trait_1_1has__func__render__impl.html#a924fd3e4b0bcc4a55383dd446d57882b">check</a>(T&amp;&amp; x, Args&amp;&amp;...args)-&gt;decltype(x.Render(args...), std::true_type{});</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="structbase_1_1core_1_1trait_1_1has__func__render__impl.html#afb65deb3b09961845f5f2840800ab804">  113</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code" href="structbase_1_1core_1_1trait_1_1has__func__render__impl.html#afb65deb3b09961845f5f2840800ab804">check</a>(...)-&gt;std::false_type;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;};</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class </span>T, <span class="keyword">class</span>...Args&gt;</div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="classbase_1_1core_1_1trait_1_1has__func__render.html">  120</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbase_1_1core_1_1trait_1_1has__func__render.html">has_func_render</a> : <span class="keyword">public</span> decltype(has_func_render_impl::check&lt;T&gt;(std::declval&lt;T&gt;(), std::forward&lt;Args&gt;(Args())...)) {};</div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="structbase_1_1core_1_1trait_1_1has__func__release__impl.html">  124</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbase_1_1core_1_1trait_1_1has__func__release__impl.html">has_func_release_impl</a> {</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class </span>T, <span class="keyword">class</span>...Args&gt;</div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="structbase_1_1core_1_1trait_1_1has__func__release__impl.html#a3232953125fd017c023f7b3b63b1c6db">  126</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code" href="structbase_1_1core_1_1trait_1_1has__func__release__impl.html#a3232953125fd017c023f7b3b63b1c6db">check</a>(T&amp;&amp; x, Args&amp;&amp;...args)-&gt;decltype(x.Release(args...), std::true_type{});</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="structbase_1_1core_1_1trait_1_1has__func__release__impl.html#ad179c89b92c72a07f85242184749919d">  128</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code" href="structbase_1_1core_1_1trait_1_1has__func__release__impl.html#ad179c89b92c72a07f85242184749919d">check</a>(...)-&gt;std::false_type;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;};</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class </span>T, <span class="keyword">class</span>...Args&gt;</div>
+<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="classbase_1_1core_1_1trait_1_1has__func__release.html">  135</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbase_1_1core_1_1trait_1_1has__func__release.html">has_func_release</a> : <span class="keyword">public</span> decltype(has_func_release_impl::check&lt;T&gt;(std::declval&lt;T&gt;(), std::forward&lt;Args&gt;(Args())...)) {};</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;} <span class="comment">// namespace</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">#endif // !BASE_CORE_TRAIT_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="anamespacebase_1_1core_1_1trait_html"><div class="ttname"><a href="namespacebase_1_1core_1_1trait.html">base::core::trait</a></div><div class="ttdef"><b>Definition:</b> Trait.h:8</div></div>
+<div class="ttc" id="astructbase_1_1core_1_1trait_1_1_arg_list_html_a578bda82d708b30e0c313b6a74c241dc"><div class="ttname"><a href="structbase_1_1core_1_1trait_1_1_arg_list.html#a578bda82d708b30e0c313b6a74c241dc">base::core::trait::ArgList::tail</a></div><div class="ttdeci">ArgSeparator&lt; Args... &gt;::tail tail</div><div class="ttdef"><b>Definition:</b> Trait.h:22</div></div>
+<div class="ttc" id="astructbase_1_1core_1_1trait_1_1has__func__input__impl_html"><div class="ttname"><a href="structbase_1_1core_1_1trait_1_1has__func__input__impl.html">base::core::trait::has_func_input_impl</a></div><div class="ttdoc">メンバ関数を持っているか</div><div class="ttdef"><b>Definition:</b> Trait.h:64</div></div>
+<div class="ttc" id="astructbase_1_1core_1_1trait_1_1has__func__input__impl_html_a2335452d1633980bf783ae93b6bafc9d"><div class="ttname"><a href="structbase_1_1core_1_1trait_1_1has__func__input__impl.html#a2335452d1633980bf783ae93b6bafc9d">base::core::trait::has_func_input_impl::check</a></div><div class="ttdeci">static auto check(T &amp;&amp;x, Args &amp;&amp;...args) -&gt; decltype(x.Input(args...), std::true_type</div><div class="ttdef"><b>Definition:</b> Trait.h:66</div></div>
+<div class="ttc" id="astructbase_1_1core_1_1trait_1_1_arg_separator_html_af12c8f9320682e0f1ee73ec3cf3e207a"><div class="ttname"><a href="structbase_1_1core_1_1trait_1_1_arg_separator.html#af12c8f9320682e0f1ee73ec3cf3e207a">base::core::trait::ArgSeparator::tail</a></div><div class="ttdeci">std::tuple&lt; Tail... &gt; tail</div><div class="ttdef"><b>Definition:</b> Trait.h:17</div></div>
+<div class="ttc" id="aclassbase_1_1core_1_1trait_1_1has__func__render_html"><div class="ttname"><a href="classbase_1_1core_1_1trait_1_1has__func__render.html">base::core::trait::has_func_render</a></div><div class="ttdoc">メンバ関数を持っているか</div><div class="ttdef"><b>Definition:</b> Trait.h:120</div></div>
+<div class="ttc" id="astructbase_1_1core_1_1trait_1_1has__func__render__impl_html"><div class="ttname"><a href="structbase_1_1core_1_1trait_1_1has__func__render__impl.html">base::core::trait::has_func_render_impl</a></div><div class="ttdoc">メンバ関数を持っているか</div><div class="ttdef"><b>Definition:</b> Trait.h:109</div></div>
+<div class="ttc" id="aclassbase_1_1core_1_1trait_1_1has__func__initialize_html"><div class="ttname"><a href="classbase_1_1core_1_1trait_1_1has__func__initialize.html">base::core::trait::has_func_initialize</a></div><div class="ttdoc">メンバ関数を持っているか</div><div class="ttdef"><b>Definition:</b> Trait.h:90</div></div>
+<div class="ttc" id="astructbase_1_1core_1_1trait_1_1has__func__initialize__impl_html"><div class="ttname"><a href="structbase_1_1core_1_1trait_1_1has__func__initialize__impl.html">base::core::trait::has_func_initialize_impl</a></div><div class="ttdoc">メンバ関数を持っているか</div><div class="ttdef"><b>Definition:</b> Trait.h:79</div></div>
+<div class="ttc" id="astructbase_1_1core_1_1trait_1_1has__func__render__impl_html_afb65deb3b09961845f5f2840800ab804"><div class="ttname"><a href="structbase_1_1core_1_1trait_1_1has__func__render__impl.html#afb65deb3b09961845f5f2840800ab804">base::core::trait::has_func_render_impl::check</a></div><div class="ttdeci">static auto check(...) -&gt; std::false_type</div></div>
+<div class="ttc" id="aclassbase_1_1core_1_1trait_1_1has__func__input_html"><div class="ttname"><a href="classbase_1_1core_1_1trait_1_1has__func__input.html">base::core::trait::has_func_input</a></div><div class="ttdoc">メンバ関数を持っているか</div><div class="ttdef"><b>Definition:</b> Trait.h:75</div></div>
+<div class="ttc" id="astructbase_1_1core_1_1trait_1_1has__func__release__impl_html_a3232953125fd017c023f7b3b63b1c6db"><div class="ttname"><a href="structbase_1_1core_1_1trait_1_1has__func__release__impl.html#a3232953125fd017c023f7b3b63b1c6db">base::core::trait::has_func_release_impl::check</a></div><div class="ttdeci">static auto check(T &amp;&amp;x, Args &amp;&amp;...args) -&gt; decltype(x.Release(args...), std::true_type</div><div class="ttdef"><b>Definition:</b> Trait.h:126</div></div>
+<div class="ttc" id="astructbase_1_1core_1_1trait_1_1remove__shared_3_01std_1_1shared__ptr_3_01_t_01_4_01_4_html_a1809dde057514f5fa9b77eb2e88eae92"><div class="ttname"><a href="structbase_1_1core_1_1trait_1_1remove__shared_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html#a1809dde057514f5fa9b77eb2e88eae92">base::core::trait::remove_shared&lt; std::shared_ptr&lt; T &gt; &gt;::type</a></div><div class="ttdeci">T type</div><div class="ttdef"><b>Definition:</b> Trait.h:38</div></div>
+<div class="ttc" id="astructbase_1_1core_1_1trait_1_1is__shared_html"><div class="ttname"><a href="structbase_1_1core_1_1trait_1_1is__shared.html">base::core::trait::is_shared</a></div><div class="ttdef"><b>Definition:</b> Trait.h:27</div></div>
+<div class="ttc" id="astructbase_1_1core_1_1trait_1_1tuple__index_html"><div class="ttname"><a href="structbase_1_1core_1_1trait_1_1tuple__index.html">base::core::trait::tuple_index</a></div><div class="ttdoc">タプルのインデックス</div><div class="ttdef"><b>Definition:</b> Trait.h:47</div></div>
+<div class="ttc" id="astructbase_1_1core_1_1trait_1_1_arg_separator_html"><div class="ttname"><a href="structbase_1_1core_1_1trait_1_1_arg_separator.html">base::core::trait::ArgSeparator</a></div><div class="ttdoc">引数を分ける</div><div class="ttdef"><b>Definition:</b> Trait.h:15</div></div>
+<div class="ttc" id="astructbase_1_1core_1_1trait_1_1_arg_separator_html_aaf3e9f82fdc2322e2a8e88d30fcef7f7"><div class="ttname"><a href="structbase_1_1core_1_1trait_1_1_arg_separator.html#aaf3e9f82fdc2322e2a8e88d30fcef7f7">base::core::trait::ArgSeparator::head</a></div><div class="ttdeci">Head head</div><div class="ttdef"><b>Definition:</b> Trait.h:16</div></div>
+<div class="ttc" id="astructbase_1_1core_1_1trait_1_1remove__shared_html_a64154a41ec761db489eeef6a756abd2c"><div class="ttname"><a href="structbase_1_1core_1_1trait_1_1remove__shared.html#a64154a41ec761db489eeef6a756abd2c">base::core::trait::remove_shared::type</a></div><div class="ttdeci">T type</div><div class="ttdef"><b>Definition:</b> Trait.h:34</div></div>
+<div class="ttc" id="astructbase_1_1core_1_1trait_1_1has__func__release__impl_html"><div class="ttname"><a href="structbase_1_1core_1_1trait_1_1has__func__release__impl.html">base::core::trait::has_func_release_impl</a></div><div class="ttdoc">メンバ関数を持っているか</div><div class="ttdef"><b>Definition:</b> Trait.h:124</div></div>
+<div class="ttc" id="astructbase_1_1core_1_1trait_1_1_arg_list_html"><div class="ttname"><a href="structbase_1_1core_1_1trait_1_1_arg_list.html">base::core::trait::ArgList</a></div><div class="ttdef"><b>Definition:</b> Trait.h:20</div></div>
+<div class="ttc" id="astructbase_1_1core_1_1trait_1_1tuple__index_html_a0bf6bb5bd534ad322fa7f3ec57354c04"><div class="ttname"><a href="structbase_1_1core_1_1trait_1_1tuple__index.html#a0bf6bb5bd534ad322fa7f3ec57354c04">base::core::trait::tuple_index::value</a></div><div class="ttdeci">static const int value</div><div class="ttdef"><b>Definition:</b> Trait.h:48</div></div>
+<div class="ttc" id="astructbase_1_1core_1_1trait_1_1has__func__initialize__impl_html_a15f884c1b016ecf10b181f01bef23ce1"><div class="ttname"><a href="structbase_1_1core_1_1trait_1_1has__func__initialize__impl.html#a15f884c1b016ecf10b181f01bef23ce1">base::core::trait::has_func_initialize_impl::check</a></div><div class="ttdeci">static auto check(...) -&gt; std::false_type</div></div>
+<div class="ttc" id="astructbase_1_1core_1_1trait_1_1has__func__update__impl_html_a6821f80dba91937b335a5b821c09114b"><div class="ttname"><a href="structbase_1_1core_1_1trait_1_1has__func__update__impl.html#a6821f80dba91937b335a5b821c09114b">base::core::trait::has_func_update_impl::check</a></div><div class="ttdeci">static auto check(...) -&gt; std::false_type</div></div>
+<div class="ttc" id="astructbase_1_1core_1_1trait_1_1has__func__update__impl_html_a41c80c74df2f92100cec9f76c6e0319c"><div class="ttname"><a href="structbase_1_1core_1_1trait_1_1has__func__update__impl.html#a41c80c74df2f92100cec9f76c6e0319c">base::core::trait::has_func_update_impl::check</a></div><div class="ttdeci">static auto check(T &amp;&amp;x, Args &amp;&amp;...args) -&gt; decltype(x.Update(args...), std::true_type</div><div class="ttdef"><b>Definition:</b> Trait.h:96</div></div>
+<div class="ttc" id="aclassbase_1_1core_1_1trait_1_1has__func__release_html"><div class="ttname"><a href="classbase_1_1core_1_1trait_1_1has__func__release.html">base::core::trait::has_func_release</a></div><div class="ttdoc">メンバ関数を持っているか</div><div class="ttdef"><b>Definition:</b> Trait.h:135</div></div>
+<div class="ttc" id="astructbase_1_1core_1_1trait_1_1has__func__render__impl_html_a924fd3e4b0bcc4a55383dd446d57882b"><div class="ttname"><a href="structbase_1_1core_1_1trait_1_1has__func__render__impl.html#a924fd3e4b0bcc4a55383dd446d57882b">base::core::trait::has_func_render_impl::check</a></div><div class="ttdeci">static auto check(T &amp;&amp;x, Args &amp;&amp;...args) -&gt; decltype(x.Render(args...), std::true_type</div><div class="ttdef"><b>Definition:</b> Trait.h:111</div></div>
+<div class="ttc" id="astructbase_1_1core_1_1trait_1_1has__func__input__impl_html_a07ee8f3a335f09569ebe477b6a6a491c"><div class="ttname"><a href="structbase_1_1core_1_1trait_1_1has__func__input__impl.html#a07ee8f3a335f09569ebe477b6a6a491c">base::core::trait::has_func_input_impl::check</a></div><div class="ttdeci">static auto check(...) -&gt; std::false_type</div></div>
+<div class="ttc" id="astructbase_1_1core_1_1trait_1_1has__func__release__impl_html_ad179c89b92c72a07f85242184749919d"><div class="ttname"><a href="structbase_1_1core_1_1trait_1_1has__func__release__impl.html#ad179c89b92c72a07f85242184749919d">base::core::trait::has_func_release_impl::check</a></div><div class="ttdeci">static auto check(...) -&gt; std::false_type</div></div>
+<div class="ttc" id="astructbase_1_1core_1_1trait_1_1_arg_list_html_ab00e7718ccad232ad96671cfac1585f2"><div class="ttname"><a href="structbase_1_1core_1_1trait_1_1_arg_list.html#ab00e7718ccad232ad96671cfac1585f2">base::core::trait::ArgList::head</a></div><div class="ttdeci">ArgSeparator&lt; Args... &gt;::head head</div><div class="ttdef"><b>Definition:</b> Trait.h:21</div></div>
+<div class="ttc" id="astructbase_1_1core_1_1trait_1_1has__func__initialize__impl_html_a5fec2fdd6a2c887cbe700df2f90f0109"><div class="ttname"><a href="structbase_1_1core_1_1trait_1_1has__func__initialize__impl.html#a5fec2fdd6a2c887cbe700df2f90f0109">base::core::trait::has_func_initialize_impl::check</a></div><div class="ttdeci">static auto check(T &amp;&amp;x, Args &amp;&amp;...args) -&gt; decltype(x.Initialize(args...), std::true_type</div><div class="ttdef"><b>Definition:</b> Trait.h:81</div></div>
+<div class="ttc" id="astructbase_1_1core_1_1trait_1_1has__func__update__impl_html"><div class="ttname"><a href="structbase_1_1core_1_1trait_1_1has__func__update__impl.html">base::core::trait::has_func_update_impl</a></div><div class="ttdoc">メンバ関数を持っているか</div><div class="ttdef"><b>Definition:</b> Trait.h:94</div></div>
+<div class="ttc" id="astructbase_1_1core_1_1trait_1_1remove__shared_html"><div class="ttname"><a href="structbase_1_1core_1_1trait_1_1remove__shared.html">base::core::trait::remove_shared</a></div><div class="ttdef"><b>Definition:</b> Trait.h:33</div></div>
+<div class="ttc" id="aclassbase_1_1core_1_1trait_1_1has__func__update_html"><div class="ttname"><a href="classbase_1_1core_1_1trait_1_1has__func__update.html">base::core::trait::has_func_update</a></div><div class="ttdoc">メンバ関数を持っているか</div><div class="ttdef"><b>Definition:</b> Trait.h:105</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

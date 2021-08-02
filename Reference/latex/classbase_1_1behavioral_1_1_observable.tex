@@ -1,0 +1,130 @@
+\hypertarget{classbase_1_1behavioral_1_1_observable}{}\doxysection{base\+::behavioral\+::Observable$<$ Notify\+Args $>$ クラステンプレート}
+\label{classbase_1_1behavioral_1_1_observable}\index{base::behavioral::Observable$<$ NotifyArgs $>$@{base::behavioral::Observable$<$ NotifyArgs $>$}}
+
+
+{\ttfamily \#include $<$Observable.\+h$>$}
+
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbase_1_1behavioral_1_1_observable_a364c6edb0cbd7c0d7057bc45a9f4f350}{Observable}} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classbase_1_1behavioral_1_1_observable_a77103e182c84f3e847d7434a49b53561}{$\sim$\+Observable}} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbase_1_1behavioral_1_1_observable_a8898da9f80adf8d42056409fcb965c26}{Add\+Observer}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classbase_1_1behavioral_1_1_observer}{Observer}} $>$ \&observer)
+\begin{DoxyCompactList}\small\item\em 追加 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbase_1_1behavioral_1_1_observable_a70b73f0ebe24945a2404097cc8609c1e}{Remove\+Observer}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classbase_1_1behavioral_1_1_observer}{Observer}} $>$ \&observer)
+\begin{DoxyCompactList}\small\item\em 削除 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbase_1_1behavioral_1_1_observable_a3e1b9ef282a7879ac11242067a262be7}{Notify}} (Notify\+Args... args)
+\begin{DoxyCompactList}\small\item\em 通知 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbase_1_1behavioral_1_1_observable_a7dae7bbb8b2847722d2afc8d22909d97}{Clear}} (void)
+\begin{DoxyCompactList}\small\item\em クリア \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbase_1_1behavioral_1_1_observable_a04e53bb09ab731aecbb74f9fc6b6f00c}{Refresh}} (void)
+\begin{DoxyCompactList}\small\item\em リフレッシュ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{classbase_1_1behavioral_1_1_observable_a364c6edb0cbd7c0d7057bc45a9f4f350}\label{classbase_1_1behavioral_1_1_observable_a364c6edb0cbd7c0d7057bc45a9f4f350}} 
+\index{base::behavioral::Observable$<$ NotifyArgs $>$@{base::behavioral::Observable$<$ NotifyArgs $>$}!Observable@{Observable}}
+\index{Observable@{Observable}!base::behavioral::Observable$<$ NotifyArgs $>$@{base::behavioral::Observable$<$ NotifyArgs $>$}}
+\doxysubsubsection{\texorpdfstring{Observable()}{Observable()}}
+{\footnotesize\ttfamily template$<$class... Notify\+Args$>$ \\
+\mbox{\hyperlink{classbase_1_1behavioral_1_1_observable}{base\+::behavioral\+::\+Observable}}$<$ Notify\+Args $>$\+::\mbox{\hyperlink{classbase_1_1behavioral_1_1_observable}{Observable}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コンストラクタ 
+
+\mbox{\Hypertarget{classbase_1_1behavioral_1_1_observable_a77103e182c84f3e847d7434a49b53561}\label{classbase_1_1behavioral_1_1_observable_a77103e182c84f3e847d7434a49b53561}} 
+\index{base::behavioral::Observable$<$ NotifyArgs $>$@{base::behavioral::Observable$<$ NotifyArgs $>$}!````~Observable@{$\sim$Observable}}
+\index{````~Observable@{$\sim$Observable}!base::behavioral::Observable$<$ NotifyArgs $>$@{base::behavioral::Observable$<$ NotifyArgs $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$Observable()}{~Observable()}}
+{\footnotesize\ttfamily template$<$class... Notify\+Args$>$ \\
+virtual \mbox{\hyperlink{classbase_1_1behavioral_1_1_observable}{base\+::behavioral\+::\+Observable}}$<$ Notify\+Args $>$\+::$\sim$\mbox{\hyperlink{classbase_1_1behavioral_1_1_observable}{Observable}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+デストラクタ 
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{classbase_1_1behavioral_1_1_observable_a8898da9f80adf8d42056409fcb965c26}\label{classbase_1_1behavioral_1_1_observable_a8898da9f80adf8d42056409fcb965c26}} 
+\index{base::behavioral::Observable$<$ NotifyArgs $>$@{base::behavioral::Observable$<$ NotifyArgs $>$}!AddObserver@{AddObserver}}
+\index{AddObserver@{AddObserver}!base::behavioral::Observable$<$ NotifyArgs $>$@{base::behavioral::Observable$<$ NotifyArgs $>$}}
+\doxysubsubsection{\texorpdfstring{AddObserver()}{AddObserver()}}
+{\footnotesize\ttfamily template$<$class... Notify\+Args$>$ \\
+void \mbox{\hyperlink{classbase_1_1behavioral_1_1_observable}{base\+::behavioral\+::\+Observable}}$<$ Notify\+Args $>$\+::Add\+Observer (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classbase_1_1behavioral_1_1_observer}{Observer}} $>$ \&}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+追加 
+
+
+\begin{DoxyParams}{引数}
+{\em observer} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbase_1_1behavioral_1_1_observable_a7dae7bbb8b2847722d2afc8d22909d97}\label{classbase_1_1behavioral_1_1_observable_a7dae7bbb8b2847722d2afc8d22909d97}} 
+\index{base::behavioral::Observable$<$ NotifyArgs $>$@{base::behavioral::Observable$<$ NotifyArgs $>$}!Clear@{Clear}}
+\index{Clear@{Clear}!base::behavioral::Observable$<$ NotifyArgs $>$@{base::behavioral::Observable$<$ NotifyArgs $>$}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily template$<$class... Notify\+Args$>$ \\
+void \mbox{\hyperlink{classbase_1_1behavioral_1_1_observable}{base\+::behavioral\+::\+Observable}}$<$ Notify\+Args $>$\+::Clear (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+クリア 
+
+\mbox{\Hypertarget{classbase_1_1behavioral_1_1_observable_a3e1b9ef282a7879ac11242067a262be7}\label{classbase_1_1behavioral_1_1_observable_a3e1b9ef282a7879ac11242067a262be7}} 
+\index{base::behavioral::Observable$<$ NotifyArgs $>$@{base::behavioral::Observable$<$ NotifyArgs $>$}!Notify@{Notify}}
+\index{Notify@{Notify}!base::behavioral::Observable$<$ NotifyArgs $>$@{base::behavioral::Observable$<$ NotifyArgs $>$}}
+\doxysubsubsection{\texorpdfstring{Notify()}{Notify()}}
+{\footnotesize\ttfamily template$<$class... Notify\+Args$>$ \\
+void \mbox{\hyperlink{classbase_1_1behavioral_1_1_observable}{base\+::behavioral\+::\+Observable}}$<$ Notify\+Args $>$\+::Notify (\begin{DoxyParamCaption}\item[{Notify\+Args...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+通知 
+
+
+\begin{DoxyParams}{引数}
+{\em ...\+args} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbase_1_1behavioral_1_1_observable_a04e53bb09ab731aecbb74f9fc6b6f00c}\label{classbase_1_1behavioral_1_1_observable_a04e53bb09ab731aecbb74f9fc6b6f00c}} 
+\index{base::behavioral::Observable$<$ NotifyArgs $>$@{base::behavioral::Observable$<$ NotifyArgs $>$}!Refresh@{Refresh}}
+\index{Refresh@{Refresh}!base::behavioral::Observable$<$ NotifyArgs $>$@{base::behavioral::Observable$<$ NotifyArgs $>$}}
+\doxysubsubsection{\texorpdfstring{Refresh()}{Refresh()}}
+{\footnotesize\ttfamily template$<$class... Notify\+Args$>$ \\
+void \mbox{\hyperlink{classbase_1_1behavioral_1_1_observable}{base\+::behavioral\+::\+Observable}}$<$ Notify\+Args $>$\+::Refresh (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+リフレッシュ 
+
+呼び出し関係図\+:
+% FIG 0
+\mbox{\Hypertarget{classbase_1_1behavioral_1_1_observable_a70b73f0ebe24945a2404097cc8609c1e}\label{classbase_1_1behavioral_1_1_observable_a70b73f0ebe24945a2404097cc8609c1e}} 
+\index{base::behavioral::Observable$<$ NotifyArgs $>$@{base::behavioral::Observable$<$ NotifyArgs $>$}!RemoveObserver@{RemoveObserver}}
+\index{RemoveObserver@{RemoveObserver}!base::behavioral::Observable$<$ NotifyArgs $>$@{base::behavioral::Observable$<$ NotifyArgs $>$}}
+\doxysubsubsection{\texorpdfstring{RemoveObserver()}{RemoveObserver()}}
+{\footnotesize\ttfamily template$<$class... Notify\+Args$>$ \\
+void \mbox{\hyperlink{classbase_1_1behavioral_1_1_observable}{base\+::behavioral\+::\+Observable}}$<$ Notify\+Args $>$\+::Remove\+Observer (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classbase_1_1behavioral_1_1_observer}{Observer}} $>$ \&}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+削除 
+
+
+\begin{DoxyParams}{引数}
+{\em observer} & \\
+\hline
+\end{DoxyParams}
+呼び出し関係図\+:
+% FIG 1
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/maila/\+Documents/\+Git\+Hub/\+Tiny\+Game/\+Tiny\+Game/\+Base/\+Behavioral/\mbox{\hyperlink{_observable_8h}{Observable.\+h}}\end{DoxyCompactItemize}

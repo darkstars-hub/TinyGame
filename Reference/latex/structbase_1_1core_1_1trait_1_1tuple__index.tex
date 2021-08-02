@@ -1,0 +1,53 @@
+\hypertarget{structbase_1_1core_1_1trait_1_1tuple__index}{}\doxysection{base\+::core\+::trait\+::tuple\+\_\+index$<$ Tuple, T, i $>$ 構造体テンプレート}
+\label{structbase_1_1core_1_1trait_1_1tuple__index}\index{base::core::trait::tuple\_index$<$ Tuple, T, i $>$@{base::core::trait::tuple\_index$<$ Tuple, T, i $>$}}
+
+
+タプルのインデックス  
+
+
+
+
+{\ttfamily \#include $<$Trait.\+h$>$}
+
+\doxysubsection*{静的公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static const int \mbox{\hyperlink{structbase_1_1core_1_1trait_1_1tuple__index_a0bf6bb5bd534ad322fa7f3ec57354c04}{value}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{詳解}
+\subsubsection*{template$<$typename Tuple, typename T, int i = std\+::tuple\+\_\+size$<$\+Tuple$>$\+::value -\/ 1$>$\newline
+struct base\+::core\+::trait\+::tuple\+\_\+index$<$ Tuple, T, i $>$}
+
+タプルのインデックス 
+
+
+\begin{DoxyTemplParams}{テンプレート引数}
+{\em T} & \\
+\hline
+{\em Tuple} & \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{structbase_1_1core_1_1trait_1_1tuple__index_a0bf6bb5bd534ad322fa7f3ec57354c04}\label{structbase_1_1core_1_1trait_1_1tuple__index_a0bf6bb5bd534ad322fa7f3ec57354c04}} 
+\index{base::core::trait::tuple\_index$<$ Tuple, T, i $>$@{base::core::trait::tuple\_index$<$ Tuple, T, i $>$}!value@{value}}
+\index{value@{value}!base::core::trait::tuple\_index$<$ Tuple, T, i $>$@{base::core::trait::tuple\_index$<$ Tuple, T, i $>$}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily template$<$typename Tuple , typename T , int i = std\+::tuple\+\_\+size$<$\+Tuple$>$\+::value -\/ 1$>$ \\
+const int \mbox{\hyperlink{structbase_1_1core_1_1trait_1_1tuple__index}{base\+::core\+::trait\+::tuple\+\_\+index}}$<$ Tuple, T, i $>$\+::value\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries 初期値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= std::is\_same<typename std::tuple\_element<i, Tuple>::type, T>\mbox{\hyperlink{structbase_1_1core_1_1trait_1_1tuple__index_a0bf6bb5bd534ad322fa7f3ec57354c04}{::value}} ?}
+\DoxyCodeLine{        i :}
+\DoxyCodeLine{        tuple\_index<Tuple, T, i -\/ 1>\mbox{\hyperlink{structbase_1_1core_1_1trait_1_1tuple__index_a0bf6bb5bd534ad322fa7f3ec57354c04}{::value}}}
+
+\end{DoxyCode}
+
+
+この構造体詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/maila/\+Documents/\+Git\+Hub/\+Tiny\+Game/\+Tiny\+Game/\+Base/\+Core/\mbox{\hyperlink{_trait_8h}{Trait.\+h}}\end{DoxyCompactItemize}

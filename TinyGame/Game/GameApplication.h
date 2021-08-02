@@ -9,8 +9,15 @@
 #define GAME_GAME_APPLICATION_H
 
 
+#include "Actor/Character/Character.h"
+#include "Container.h"
+
+
 namespace game {
 class GameApplication {
+private:
+    //! 仮
+    game::actor::character::Character _chara;
 public:
     /// <summary>
     /// コンストラクタ

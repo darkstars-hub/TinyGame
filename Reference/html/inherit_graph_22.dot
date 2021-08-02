@@ -1,0 +1,10 @@
+digraph "クラス階層図"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node5 [label="true_type",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="base::core::trait::\lis_shared\< std::shared\l_ptr\< T \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structbase_1_1core_1_1trait_1_1is__shared_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html",tooltip=" "];
+}

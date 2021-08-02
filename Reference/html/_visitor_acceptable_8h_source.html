@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TinyGame: C:/Users/maila/Documents/GitHub/TinyGame/TinyGame/Base/Structural/VisitorAcceptable.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TinyGame
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_abba61bbc914433e1c2a75a7082e7133.html">TinyGame</a></li><li class="navelem"><a class="el" href="dir_4e5098fc5bf43341f4ba0ce8acfd732c.html">Base</a></li><li class="navelem"><a class="el" href="dir_b97c341fda3bd83893cd0be334cbbb15.html">Structural</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">VisitorAcceptable.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_visitor_acceptable_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BASE_STRUCTURAL_VISITOR_ACCEPTABLE_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define BASE_STRUCTURAL_VISITOR_ACCEPTABLE_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebase_1_1structural.html">base::structural</a> {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="classbase_1_1structural_1_1_visitor_acceptable.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbase_1_1structural_1_1_visitor_acceptable.html">VisitorAcceptable</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Visitor&gt;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classbase_1_1structural_1_1_visitor_acceptable.html#a1f4c15af1487dfe254d10c33b75fcce1">   15</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classbase_1_1structural_1_1_visitor_acceptable.html#a1f4c15af1487dfe254d10c33b75fcce1">AcceptVisitor</a>(Visitor&amp; out)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        out.Visit(<span class="keyword">static_cast&lt;</span><span class="keyword">const </span>T&amp;<span class="keyword">&gt;</span>(*<span class="keyword">this</span>));</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    }</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;};</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif // !BASE_STRUCTURAL_VISITOR_ACCEPTABLE_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="anamespacebase_1_1structural_html"><div class="ttname"><a href="namespacebase_1_1structural.html">base::structural</a></div><div class="ttdef"><b>Definition:</b> ServiceLocator.h:8</div></div>
+<div class="ttc" id="aclassbase_1_1structural_1_1_visitor_acceptable_html_a1f4c15af1487dfe254d10c33b75fcce1"><div class="ttname"><a href="classbase_1_1structural_1_1_visitor_acceptable.html#a1f4c15af1487dfe254d10c33b75fcce1">base::structural::VisitorAcceptable::AcceptVisitor</a></div><div class="ttdeci">void AcceptVisitor(Visitor &amp;out) const</div><div class="ttdoc">受け入れ</div><div class="ttdef"><b>Definition:</b> VisitorAcceptable.h:15</div></div>
+<div class="ttc" id="aclassbase_1_1structural_1_1_visitor_acceptable_html"><div class="ttname"><a href="classbase_1_1structural_1_1_visitor_acceptable.html">base::structural::VisitorAcceptable</a></div><div class="ttdef"><b>Definition:</b> VisitorAcceptable.h:7</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

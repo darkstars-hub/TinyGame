@@ -38,6 +38,13 @@ public:
     /// デストラクタ
     /// </summary>
     ~Character();
+    /// <summary>
+    /// テスト
+    /// </summary>
+    /// <param name=""></param>
+    void Mock(void) const {
+        puts("Mock");
+    }
 };
 using CharacterPtr = std::shared_ptr<game::actor::character::Character>;
 }

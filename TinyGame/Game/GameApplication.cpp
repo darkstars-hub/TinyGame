@@ -7,9 +7,6 @@
 //! 
 #include "GameApplication.h"
 
-#include "Actor/Character/Character.h"
-#include "Container.h"
-
 
 game::GameApplication::GameApplication() {
 }
@@ -31,6 +28,7 @@ bool game::GameApplication::Initialize(void) {
 }
 
 bool game::GameApplication::Update(float delta_time) {
+    _chara.Mock();
     return true;
 }
 

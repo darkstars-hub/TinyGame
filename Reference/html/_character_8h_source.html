@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TinyGame: C:/Users/maila/Documents/GitHub/TinyGame/TinyGame/Game/Actor/Character/Character.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TinyGame
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_abba61bbc914433e1c2a75a7082e7133.html">TinyGame</a></li><li class="navelem"><a class="el" href="dir_04eaaac0ff0817fe577b47fae5bf9f4f.html">Game</a></li><li class="navelem"><a class="el" href="dir_2cf8f863bc17b6a2726309cd38e950ea.html">Actor</a></li><li class="navelem"><a class="el" href="dir_24d99319a3c8d9159e1a1362018456c1.html">Character</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Character.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_character_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GAME_ACTOR_CHARACTER_CHARACTER_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define GAME_ACTOR_CHARACTER_CHARACTER_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_character_configuration_8h.html">CharacterConfiguration.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_accessor_8h.html">Base/Accessor/Accessor.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_getter_8h.html">Base/Accessor/Getter.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespacegame_1_1actor_1_1character.html">   17</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegame_1_1actor_1_1character.html">game::actor::character</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classgame_1_1actor_1_1character_1_1_character.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classgame_1_1actor_1_1character_1_1_character.html">Character</a> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="structgame_1_1actor_1_1character_1_1_character_configuration.html">game::actor::character::CharacterConfiguration</a> _configuration;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classgame_1_1actor_1_1character_1_1_character.html#a9b174d96820c50c46eb1d3f5de49d7b1">   24</a></span>&#160;    <a class="code" href="classbase_1_1accessor_1_1_accessor.html">base::accessor::Accessor</a>&lt;decltype(_configuration.<a class="code" href="structgame_1_1actor_1_1character_1_1_character_configuration.html#ab791dd5737e0bc40613a13f9ea8a4ab4">name</a>)&gt; <a class="code" href="classgame_1_1actor_1_1character_1_1_character.html#a9b174d96820c50c46eb1d3f5de49d7b1">name</a> = (_configuration.<a class="code" href="structgame_1_1actor_1_1character_1_1_character_configuration.html#ab791dd5737e0bc40613a13f9ea8a4ab4">name</a>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classgame_1_1actor_1_1character_1_1_character.html#a93892c42ad65001b7c60b3f8515d89c6">   26</a></span>&#160;    <a class="code" href="classbase_1_1accessor_1_1_accessor.html">base::accessor::Accessor</a>&lt;decltype(_configuration.<a class="code" href="structgame_1_1actor_1_1character_1_1_character_configuration.html#afc410646b605ba7a2f79d941816d7247">state</a>)&gt; <a class="code" href="classgame_1_1actor_1_1character_1_1_character.html#a93892c42ad65001b7c60b3f8515d89c6">state</a> = (_configuration.<a class="code" href="structgame_1_1actor_1_1character_1_1_character_configuration.html#afc410646b605ba7a2f79d941816d7247">state</a>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">static</span> std::shared_ptr&lt;game::actor::character::Character&gt; <a class="code" href="classgame_1_1actor_1_1character_1_1_character.html#af101b4c35bd3638bc6e7b8876008dcf8">MakeShared</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classgame_1_1actor_1_1character_1_1_character.html#ace896d0b8d508c0f3f1fc32ffbab0fa0">Character</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="classgame_1_1actor_1_1character_1_1_character.html#a7b0116959354c1103cd2756da8649c28">~Character</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classgame_1_1actor_1_1character_1_1_character.html#a6f9e7dd44e330d6e0227855a70739387">   45</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classgame_1_1actor_1_1character_1_1_character.html#a6f9e7dd44e330d6e0227855a70739387">Mock</a>(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        puts(<span class="stringliteral">&quot;Mock&quot;</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="namespacegame_1_1actor_1_1character.html#a593649f8fda7eef1f849c47d03846c91">   49</a></span>&#160;<span class="keyword">using</span> <a class="code" href="namespacegame_1_1actor_1_1character.html#a593649f8fda7eef1f849c47d03846c91">CharacterPtr</a> = std::shared_ptr&lt;game::actor::character::Character&gt;;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif // !GAME_ACTOR_CHARACTER_CHARACTER_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassgame_1_1actor_1_1character_1_1_character_html"><div class="ttname"><a href="classgame_1_1actor_1_1character_1_1_character.html">game::actor::character::Character</a></div><div class="ttdef"><b>Definition:</b> Character.h:18</div></div>
+<div class="ttc" id="aclassgame_1_1actor_1_1character_1_1_character_html_af101b4c35bd3638bc6e7b8876008dcf8"><div class="ttname"><a href="classgame_1_1actor_1_1character_1_1_character.html#af101b4c35bd3638bc6e7b8876008dcf8">game::actor::character::Character::MakeShared</a></div><div class="ttdeci">static std::shared_ptr&lt; game::actor::character::Character &gt; MakeShared(void)</div><div class="ttdoc">名前付きコンストラクタ</div><div class="ttdef"><b>Definition:</b> Character.cpp:11</div></div>
+<div class="ttc" id="aclassgame_1_1actor_1_1character_1_1_character_html_a6f9e7dd44e330d6e0227855a70739387"><div class="ttname"><a href="classgame_1_1actor_1_1character_1_1_character.html#a6f9e7dd44e330d6e0227855a70739387">game::actor::character::Character::Mock</a></div><div class="ttdeci">void Mock(void) const</div><div class="ttdoc">テスト</div><div class="ttdef"><b>Definition:</b> Character.h:45</div></div>
+<div class="ttc" id="aclassgame_1_1actor_1_1character_1_1_character_html_a93892c42ad65001b7c60b3f8515d89c6"><div class="ttname"><a href="classgame_1_1actor_1_1character_1_1_character.html#a93892c42ad65001b7c60b3f8515d89c6">game::actor::character::Character::state</a></div><div class="ttdeci">base::accessor::Accessor&lt; decltype(_configuration.state)&gt; state</div><div class="ttdoc">アクセッサ</div><div class="ttdef"><b>Definition:</b> Character.h:26</div></div>
+<div class="ttc" id="aclassbase_1_1accessor_1_1_accessor_html"><div class="ttname"><a href="classbase_1_1accessor_1_1_accessor.html">base::accessor::Accessor</a></div><div class="ttdef"><b>Definition:</b> Accessor.h:18</div></div>
+<div class="ttc" id="a_accessor_8h_html"><div class="ttname"><a href="_accessor_8h.html">Accessor.h</a></div><div class="ttdoc">ゲッター</div></div>
+<div class="ttc" id="a_getter_8h_html"><div class="ttname"><a href="_getter_8h.html">Getter.h</a></div><div class="ttdoc">ゲッター</div></div>
+<div class="ttc" id="anamespacegame_1_1actor_1_1character_html_a593649f8fda7eef1f849c47d03846c91"><div class="ttname"><a href="namespacegame_1_1actor_1_1character.html#a593649f8fda7eef1f849c47d03846c91">game::actor::character::CharacterPtr</a></div><div class="ttdeci">std::shared_ptr&lt; game::actor::character::Character &gt; CharacterPtr</div><div class="ttdef"><b>Definition:</b> Character.h:49</div></div>
+<div class="ttc" id="a_character_8h_html"><div class="ttname"><a href="_character_8h.html">Character.h</a></div><div class="ttdoc">game character</div></div>
+<div class="ttc" id="aclassgame_1_1actor_1_1character_1_1_character_html_a7b0116959354c1103cd2756da8649c28"><div class="ttname"><a href="classgame_1_1actor_1_1character_1_1_character.html#a7b0116959354c1103cd2756da8649c28">game::actor::character::Character::~Character</a></div><div class="ttdeci">~Character()</div><div class="ttdoc">デストラクタ</div><div class="ttdef"><b>Definition:</b> Character.cpp:19</div></div>
+<div class="ttc" id="aclassgame_1_1actor_1_1character_1_1_character_html_a9b174d96820c50c46eb1d3f5de49d7b1"><div class="ttname"><a href="classgame_1_1actor_1_1character_1_1_character.html#a9b174d96820c50c46eb1d3f5de49d7b1">game::actor::character::Character::name</a></div><div class="ttdeci">base::accessor::Accessor&lt; decltype(_configuration.name)&gt; name</div><div class="ttdoc">アクセッサ</div><div class="ttdef"><b>Definition:</b> Character.h:24</div></div>
+<div class="ttc" id="anamespacegame_1_1actor_1_1character_html"><div class="ttname"><a href="namespacegame_1_1actor_1_1character.html">game::actor::character</a></div><div class="ttdef"><b>Definition:</b> Character.h:17</div></div>
+<div class="ttc" id="a_character_configuration_8h_html"><div class="ttname"><a href="_character_configuration_8h.html">CharacterConfiguration.h</a></div><div class="ttdoc">キャラクタークラスを構成するパラメータ</div></div>
+<div class="ttc" id="astructgame_1_1actor_1_1character_1_1_character_configuration_html"><div class="ttname"><a href="structgame_1_1actor_1_1character_1_1_character_configuration.html">game::actor::character::CharacterConfiguration</a></div><div class="ttdef"><b>Definition:</b> CharacterConfiguration.h:16</div></div>
+<div class="ttc" id="aclassgame_1_1actor_1_1character_1_1_character_html_ace896d0b8d508c0f3f1fc32ffbab0fa0"><div class="ttname"><a href="classgame_1_1actor_1_1character_1_1_character.html#ace896d0b8d508c0f3f1fc32ffbab0fa0">game::actor::character::Character::Character</a></div><div class="ttdeci">Character()</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> Character.cpp:15</div></div>
+<div class="ttc" id="astructgame_1_1actor_1_1character_1_1_character_configuration_html_afc410646b605ba7a2f79d941816d7247"><div class="ttname"><a href="structgame_1_1actor_1_1character_1_1_character_configuration.html#afc410646b605ba7a2f79d941816d7247">game::actor::character::CharacterConfiguration::state</a></div><div class="ttdeci">game::parameter::character::CharacterState state</div><div class="ttdoc">状態</div><div class="ttdef"><b>Definition:</b> CharacterConfiguration.h:20</div></div>
+<div class="ttc" id="astructgame_1_1actor_1_1character_1_1_character_configuration_html_ab791dd5737e0bc40613a13f9ea8a4ab4"><div class="ttname"><a href="structgame_1_1actor_1_1character_1_1_character_configuration.html#ab791dd5737e0bc40613a13f9ea8a4ab4">game::actor::character::CharacterConfiguration::name</a></div><div class="ttdeci">base::parameter::NameParameter name</div><div class="ttdoc">名前</div><div class="ttdef"><b>Definition:</b> CharacterConfiguration.h:18</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>
