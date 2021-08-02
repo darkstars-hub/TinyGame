@@ -1,3 +1,5 @@
+# Undefined
+Undefined/
 
 # Debug
 Debug/
@@ -17,8 +19,6 @@ Release/
 
 # exe
 *.exe
-
-
 
 # lib
 *.lib
