@@ -1,0 +1,25 @@
+digraph "C:/Users/maila/Documents/GitHub/TinyGame/TinyGame/Base" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_abba61bbc914433e1c2a75a7082e7133 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="TinyGame" fontname="Helvetica", fontsize="10", URL="dir_abba61bbc914433e1c2a75a7082e7133.html"]
+  subgraph clusterdir_4e5098fc5bf43341f4ba0ce8acfd732c {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_4e5098fc5bf43341f4ba0ce8acfd732c.html"];
+    dir_4e5098fc5bf43341f4ba0ce8acfd732c [shape=plaintext label="Base"];
+    dir_ec007e1bea98036b62ecec416e74daa2 [shape=box label="Accessor" color="black" fillcolor="white" style="filled" URL="dir_ec007e1bea98036b62ecec416e74daa2.html"];
+    dir_4d9fbcde71025ecb464510415fbc3b20 [shape=box label="Behavioral" color="black" fillcolor="white" style="filled" URL="dir_4d9fbcde71025ecb464510415fbc3b20.html"];
+    dir_dac6b5bc95e7c2b3f2f0634accedfc6a [shape=box label="Core" color="red" fillcolor="white" style="filled" URL="dir_dac6b5bc95e7c2b3f2f0634accedfc6a.html"];
+    dir_6020ac65bcfcac58256e68a0869e199c [shape=box label="Creational" color="black" fillcolor="white" style="filled" URL="dir_6020ac65bcfcac58256e68a0869e199c.html"];
+    dir_fa4486ed66338f793781550d63dc28f0 [shape=box label="Exception" color="red" fillcolor="white" style="filled" URL="dir_fa4486ed66338f793781550d63dc28f0.html"];
+    dir_57fe48a3bd20ed6960eb018e2cf716ef [shape=box label="Interface" color="black" fillcolor="white" style="filled" URL="dir_57fe48a3bd20ed6960eb018e2cf716ef.html"];
+    dir_1b99ac9cea2e849cf3386ae498168a30 [shape=box label="Math" color="red" fillcolor="white" style="filled" URL="dir_1b99ac9cea2e849cf3386ae498168a30.html"];
+    dir_70b4991e308cf987464a29d01556d88b [shape=box label="Parameter" color="black" fillcolor="white" style="filled" URL="dir_70b4991e308cf987464a29d01556d88b.html"];
+    dir_a1ba3de496ddebb59da1d86451cdbd21 [shape=box label="Shape" color="red" fillcolor="white" style="filled" URL="dir_a1ba3de496ddebb59da1d86451cdbd21.html"];
+    dir_b97c341fda3bd83893cd0be334cbbb15 [shape=box label="Structural" color="red" fillcolor="white" style="filled" URL="dir_b97c341fda3bd83893cd0be334cbbb15.html"];
+    dir_4d3b5310c77bc2cd0d6a4f6de26d4aae [shape=box label="Utility" color="red" fillcolor="white" style="filled" URL="dir_4d3b5310c77bc2cd0d6a4f6de26d4aae.html"];
+  }
+  }
+  dir_4d9fbcde71025ecb464510415fbc3b20->dir_dac6b5bc95e7c2b3f2f0634accedfc6a [headlabel="1", labeldistance=1.5 headhref="dir_000003_000004.html"];
+  dir_ec007e1bea98036b62ecec416e74daa2->dir_b97c341fda3bd83893cd0be334cbbb15 [headlabel="1", labeldistance=1.5 headhref="dir_000002_000015.html"];
+}

@@ -1,0 +1,11 @@
+digraph "C:/Users/maila/Documents/GitHub/TinyGame/TinyGame/Base/Behavioral" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_4e5098fc5bf43341f4ba0ce8acfd732c {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Base" fontname="Helvetica", fontsize="10", URL="dir_4e5098fc5bf43341f4ba0ce8acfd732c.html"]
+  dir_4d9fbcde71025ecb464510415fbc3b20 [shape=box, label="Behavioral", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_4d9fbcde71025ecb464510415fbc3b20.html"];
+  }
+  dir_dac6b5bc95e7c2b3f2f0634accedfc6a [shape=box label="Core" fillcolor="white" style="filled" color="red" URL="dir_dac6b5bc95e7c2b3f2f0634accedfc6a.html"];
+  dir_4d9fbcde71025ecb464510415fbc3b20->dir_dac6b5bc95e7c2b3f2f0634accedfc6a [headlabel="1", labeldistance=1.5 headhref="dir_000003_000004.html"];
+}

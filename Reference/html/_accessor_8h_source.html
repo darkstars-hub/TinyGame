@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TinyGame: C:/Users/maila/Documents/GitHub/TinyGame/TinyGame/Base/Accessor/Accessor.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TinyGame
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_abba61bbc914433e1c2a75a7082e7133.html">TinyGame</a></li><li class="navelem"><a class="el" href="dir_4e5098fc5bf43341f4ba0ce8acfd732c.html">Base</a></li><li class="navelem"><a class="el" href="dir_ec007e1bea98036b62ecec416e74daa2.html">Accessor</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Accessor.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_accessor_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef BASE_ACCESSOR_ACCESSOR_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define BASE_ACCESSOR_ACCESSOR_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;type_traits&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="namespacebase_1_1accessor.html">   16</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebase_1_1accessor.html">base::accessor</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classbase_1_1accessor_1_1_accessor.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbase_1_1accessor_1_1_accessor.html">Accessor</a> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    T* _value;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classbase_1_1accessor_1_1_accessor.html#a3f7d017383cf30eb55c9e56c97c54ac2">   27</a></span>&#160;    <a class="code" href="classbase_1_1accessor_1_1_accessor.html#a3f7d017383cf30eb55c9e56c97c54ac2">Accessor</a>(T&amp; value) :</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        _value(&amp;value) {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classbase_1_1accessor_1_1_accessor.html#af292b68a49b74d9b165a5756009e0669">   34</a></span>&#160;    <a class="code" href="classbase_1_1accessor_1_1_accessor.html#af292b68a49b74d9b165a5756009e0669">~Accessor</a>() {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        _value = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classbase_1_1accessor_1_1_accessor.html#a2486d53577d0ffe2a8382142d2b33413">   42</a></span>&#160;    <a class="code" href="classbase_1_1accessor_1_1_accessor.html">Accessor</a>&amp; <a class="code" href="classbase_1_1accessor_1_1_accessor.html#a2486d53577d0ffe2a8382142d2b33413">operator =</a>(<span class="keyword">const</span> T&amp; value) {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        *this-&gt;_value = value;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classbase_1_1accessor_1_1_accessor.html#ace1f245a0523db743557dbaf437254fa">   50</a></span>&#160;    <span class="keyword">operator</span> <span class="keyword">const</span> T&amp; (void) <span class="keyword">const</span> {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">return</span> *this-&gt;_value;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classbase_1_1accessor_1_1_accessor.html#a7ad6e27aba231d83c60c8e6c86ce0321">   58</a></span>&#160;    T* <a class="code" href="classbase_1_1accessor_1_1_accessor.html#a7ad6e27aba231d83c60c8e6c86ce0321">operator-&gt;</a>(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">return</span> this-&gt;_value;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classbase_1_1accessor_1_1_accessor.html#a8e44cf4c68725a31906b942c4b3f537b">   66</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classbase_1_1accessor_1_1_accessor.html#a8e44cf4c68725a31906b942c4b3f537b">operator == </a>(<span class="keyword">const</span> T&amp; value)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">return</span> *this-&gt;_value == value;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classbase_1_1accessor_1_1_accessor.html#a58c67f0544fbaaead7b5c1db26c19385">   74</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classbase_1_1accessor_1_1_accessor.html#a8e44cf4c68725a31906b942c4b3f537b">operator == </a>(<span class="keyword">const</span> <a class="code" href="classbase_1_1accessor_1_1_accessor.html">Accessor&lt;T&gt;</a>&amp; obj)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">return</span> *this-&gt;_value == *obj._value;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classbase_1_1accessor_1_1_accessor.html#a3f4225e036ea7e331b34bb72aa3b81c7">   82</a></span>&#160;    <a class="code" href="classbase_1_1accessor_1_1_accessor.html">Accessor</a>&amp; <a class="code" href="classbase_1_1accessor_1_1_accessor.html#a3f4225e036ea7e331b34bb72aa3b81c7">operator += </a>(T* value) {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        *this-&gt;_value += *value;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classbase_1_1accessor_1_1_accessor.html#ab74a743a6062ce969637053ac4df3938">   91</a></span>&#160;    <a class="code" href="classbase_1_1accessor_1_1_accessor.html">Accessor</a>&amp; <a class="code" href="classbase_1_1accessor_1_1_accessor.html#a3f4225e036ea7e331b34bb72aa3b81c7">operator += </a>(<span class="keyword">const</span> T&amp; value) {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        *this-&gt;_value += value;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classbase_1_1accessor_1_1_accessor_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html">   97</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbase_1_1accessor_1_1_accessor.html">Accessor</a>&lt;std::shared_ptr&lt;T&gt;&gt; {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    std::shared_ptr&lt;T&gt; _value;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classbase_1_1accessor_1_1_accessor_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html#a5468af9849d991d71463d1e4361da894">  102</a></span>&#160;    <a class="code" href="classbase_1_1accessor_1_1_accessor_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html#a5468af9849d991d71463d1e4361da894">Accessor</a>(std::shared_ptr&lt;T&gt;&amp; value) :</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        _value(value) {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classbase_1_1accessor_1_1_accessor_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html#a87f789a067870474164f341576d8ac25">  105</a></span>&#160;    <a class="code" href="classbase_1_1accessor_1_1_accessor_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html#a87f789a067870474164f341576d8ac25">~Accessor</a>() {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        _value = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classbase_1_1accessor_1_1_accessor_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html#a4a341691fb562e6bb2082c149eb126cb">  108</a></span>&#160;    <a class="code" href="classbase_1_1accessor_1_1_accessor.html">Accessor</a>&amp; <a class="code" href="classbase_1_1accessor_1_1_accessor.html#a2486d53577d0ffe2a8382142d2b33413">operator =</a>(<span class="keyword">const</span> T&amp; value) {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        *this-&gt;_value = value;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classbase_1_1accessor_1_1_accessor_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html#abfffc6426ba253361335632c716bc79a">  116</a></span>&#160;    <span class="keyword">operator</span> <span class="keyword">const</span> std::shared_ptr&lt;T&gt;&amp; (void) <span class="keyword">const</span> {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordflow">return</span> this-&gt;_value;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="classbase_1_1accessor_1_1_accessor_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html#a7a6a828f59818ffcae20c24d9eee2325">  124</a></span>&#160;    std::shared_ptr&lt;T&gt; <a class="code" href="classbase_1_1accessor_1_1_accessor_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html#a7a6a828f59818ffcae20c24d9eee2325">operator-&gt;</a>(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordflow">return</span> this-&gt;_value;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;};</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#endif // !BASE_ACCESSOR_ACCESSOR_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassbase_1_1accessor_1_1_accessor_html_a8e44cf4c68725a31906b942c4b3f537b"><div class="ttname"><a href="classbase_1_1accessor_1_1_accessor.html#a8e44cf4c68725a31906b942c4b3f537b">base::accessor::Accessor::operator==</a></div><div class="ttdeci">bool operator==(const T &amp;value) const</div><div class="ttdoc">判定</div><div class="ttdef"><b>Definition:</b> Accessor.h:66</div></div>
+<div class="ttc" id="aclassbase_1_1accessor_1_1_accessor_html"><div class="ttname"><a href="classbase_1_1accessor_1_1_accessor.html">base::accessor::Accessor</a></div><div class="ttdef"><b>Definition:</b> Accessor.h:18</div></div>
+<div class="ttc" id="aclassbase_1_1accessor_1_1_accessor_html_af292b68a49b74d9b165a5756009e0669"><div class="ttname"><a href="classbase_1_1accessor_1_1_accessor.html#af292b68a49b74d9b165a5756009e0669">base::accessor::Accessor::~Accessor</a></div><div class="ttdeci">~Accessor()</div><div class="ttdoc">デストラクタ</div><div class="ttdef"><b>Definition:</b> Accessor.h:34</div></div>
+<div class="ttc" id="aclassbase_1_1accessor_1_1_accessor_3_01std_1_1shared__ptr_3_01_t_01_4_01_4_html_a5468af9849d991d71463d1e4361da894"><div class="ttname"><a href="classbase_1_1accessor_1_1_accessor_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html#a5468af9849d991d71463d1e4361da894">base::accessor::Accessor&lt; std::shared_ptr&lt; T &gt; &gt;::Accessor</a></div><div class="ttdeci">Accessor(std::shared_ptr&lt; T &gt; &amp;value)</div><div class="ttdef"><b>Definition:</b> Accessor.h:102</div></div>
+<div class="ttc" id="aclassbase_1_1accessor_1_1_accessor_html_a3f4225e036ea7e331b34bb72aa3b81c7"><div class="ttname"><a href="classbase_1_1accessor_1_1_accessor.html#a3f4225e036ea7e331b34bb72aa3b81c7">base::accessor::Accessor::operator+=</a></div><div class="ttdeci">Accessor &amp; operator+=(T *value)</div><div class="ttdoc">加算</div><div class="ttdef"><b>Definition:</b> Accessor.h:82</div></div>
+<div class="ttc" id="anamespacebase_1_1accessor_html"><div class="ttname"><a href="namespacebase_1_1accessor.html">base::accessor</a></div><div class="ttdef"><b>Definition:</b> Accessor.h:16</div></div>
+<div class="ttc" id="aclassbase_1_1accessor_1_1_accessor_html_a2486d53577d0ffe2a8382142d2b33413"><div class="ttname"><a href="classbase_1_1accessor_1_1_accessor.html#a2486d53577d0ffe2a8382142d2b33413">base::accessor::Accessor::operator=</a></div><div class="ttdeci">Accessor &amp; operator=(const T &amp;value)</div><div class="ttdoc">セッター</div><div class="ttdef"><b>Definition:</b> Accessor.h:42</div></div>
+<div class="ttc" id="aclassbase_1_1accessor_1_1_accessor_html_a7ad6e27aba231d83c60c8e6c86ce0321"><div class="ttname"><a href="classbase_1_1accessor_1_1_accessor.html#a7ad6e27aba231d83c60c8e6c86ce0321">base::accessor::Accessor::operator-&gt;</a></div><div class="ttdeci">T * operator-&gt;(void) const</div><div class="ttdoc">アクセス</div><div class="ttdef"><b>Definition:</b> Accessor.h:58</div></div>
+<div class="ttc" id="aclassbase_1_1accessor_1_1_accessor_html_a3f7d017383cf30eb55c9e56c97c54ac2"><div class="ttname"><a href="classbase_1_1accessor_1_1_accessor.html#a3f7d017383cf30eb55c9e56c97c54ac2">base::accessor::Accessor::Accessor</a></div><div class="ttdeci">Accessor(T &amp;value)</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> Accessor.h:27</div></div>
+<div class="ttc" id="aclassbase_1_1accessor_1_1_accessor_3_01std_1_1shared__ptr_3_01_t_01_4_01_4_html_a87f789a067870474164f341576d8ac25"><div class="ttname"><a href="classbase_1_1accessor_1_1_accessor_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html#a87f789a067870474164f341576d8ac25">base::accessor::Accessor&lt; std::shared_ptr&lt; T &gt; &gt;::~Accessor</a></div><div class="ttdeci">~Accessor()</div><div class="ttdef"><b>Definition:</b> Accessor.h:105</div></div>
+<div class="ttc" id="aclassbase_1_1accessor_1_1_accessor_3_01std_1_1shared__ptr_3_01_t_01_4_01_4_html_a7a6a828f59818ffcae20c24d9eee2325"><div class="ttname"><a href="classbase_1_1accessor_1_1_accessor_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html#a7a6a828f59818ffcae20c24d9eee2325">base::accessor::Accessor&lt; std::shared_ptr&lt; T &gt; &gt;::operator-&gt;</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; operator-&gt;(void) const</div><div class="ttdoc">アクセス</div><div class="ttdef"><b>Definition:</b> Accessor.h:124</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

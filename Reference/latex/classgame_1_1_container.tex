@@ -1,0 +1,276 @@
+\hypertarget{classgame_1_1_container}{}\doxysection{game\+::Container$<$ Element $>$ クラステンプレート}
+\label{classgame_1_1_container}\index{game::Container$<$ Element $>$@{game::Container$<$ Element $>$}}
+
+
+{\ttfamily \#include $<$Container.\+h$>$}
+
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgame_1_1_container_ac6692a8cefccaa9d4846def7f8de727f}{Container}} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgame_1_1_container_ab59cf37ac25ef0902f06856e756f004d}{Container}} (int capacity)
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgame_1_1_container_a15b0481408c8bd7404896682e148935f}{$\sim$\+Container}} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{classgame_1_1_container_a32633433887552d17e3109176e18a035}{operator()}} (void) const
+\begin{DoxyCompactList}\small\item\em 取得 \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{classgame_1_1_container_a703bba44c280da49e281d0f94c9654e6}{begin}} (void)
+\begin{DoxyCompactList}\small\item\em begin \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{classgame_1_1_container_a06d552277d71361afe867b6efa6a61b2}{end}} (void)
+\begin{DoxyCompactList}\small\item\em end \end{DoxyCompactList}\item 
+Element \mbox{\hyperlink{classgame_1_1_container_a02e41ffc777ffaa8a2a1d65168c26aec}{Get}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em 取得 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgame_1_1_container_a9bdffa457d9500b2b1cb4392e0cc2dce}{Add}} (const Element \&value)
+\begin{DoxyCompactList}\small\item\em 追加 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classgame_1_1_container_a17282785cc279d4df8a8159d78f81b5b}{Empty}} (void) const
+\begin{DoxyCompactList}\small\item\em 判定 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classgame_1_1_container_adff647c4426b098ae042ff28a2dcd0a8}{Initialize}} (void)
+\begin{DoxyCompactList}\small\item\em 初期化 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classgame_1_1_container_ab4167503f90aefadbd43d4072eec5c8c}{Input}} (float delta\+\_\+time)
+\begin{DoxyCompactList}\small\item\em 入力 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classgame_1_1_container_a4c1111b367e4c301ba4e218c5b61c90e}{Update}} (float delta\+\_\+time)
+\begin{DoxyCompactList}\small\item\em 更新 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classgame_1_1_container_a73696ab9228f4b6396d99bafe50bd38e}{Render}} (void)
+\begin{DoxyCompactList}\small\item\em 描画 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classgame_1_1_container_a49e316d622670c72528492b1cc273e9b}{Release}} (void)
+\begin{DoxyCompactList}\small\item\em 解放 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgame_1_1_container_aedaa4d08664c4e68d3ee0f8b836f1d4a}{Refresh}} (void)
+\begin{DoxyCompactList}\small\item\em リフレッシュ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{classgame_1_1_container_ac6692a8cefccaa9d4846def7f8de727f}\label{classgame_1_1_container_ac6692a8cefccaa9d4846def7f8de727f}} 
+\index{game::Container$<$ Element $>$@{game::Container$<$ Element $>$}!Container@{Container}}
+\index{Container@{Container}!game::Container$<$ Element $>$@{game::Container$<$ Element $>$}}
+\doxysubsubsection{\texorpdfstring{Container()}{Container()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Element $>$ \\
+\mbox{\hyperlink{classgame_1_1_container}{game\+::\+Container}}$<$ Element $>$\+::\mbox{\hyperlink{classgame_1_1_container}{Container}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コンストラクタ 
+
+\mbox{\Hypertarget{classgame_1_1_container_ab59cf37ac25ef0902f06856e756f004d}\label{classgame_1_1_container_ab59cf37ac25ef0902f06856e756f004d}} 
+\index{game::Container$<$ Element $>$@{game::Container$<$ Element $>$}!Container@{Container}}
+\index{Container@{Container}!game::Container$<$ Element $>$@{game::Container$<$ Element $>$}}
+\doxysubsubsection{\texorpdfstring{Container()}{Container()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Element $>$ \\
+\mbox{\hyperlink{classgame_1_1_container}{game\+::\+Container}}$<$ Element $>$\+::\mbox{\hyperlink{classgame_1_1_container}{Container}} (\begin{DoxyParamCaption}\item[{int}]{capacity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コンストラクタ 
+
+
+\begin{DoxyParams}{引数}
+{\em capacity} & キャパシティー\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgame_1_1_container_a15b0481408c8bd7404896682e148935f}\label{classgame_1_1_container_a15b0481408c8bd7404896682e148935f}} 
+\index{game::Container$<$ Element $>$@{game::Container$<$ Element $>$}!````~Container@{$\sim$Container}}
+\index{````~Container@{$\sim$Container}!game::Container$<$ Element $>$@{game::Container$<$ Element $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$Container()}{~Container()}}
+{\footnotesize\ttfamily template$<$typename Element $>$ \\
+\mbox{\hyperlink{classgame_1_1_container}{game\+::\+Container}}$<$ Element $>$\+::$\sim$\mbox{\hyperlink{classgame_1_1_container}{Container}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+デストラクタ 
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{classgame_1_1_container_a9bdffa457d9500b2b1cb4392e0cc2dce}\label{classgame_1_1_container_a9bdffa457d9500b2b1cb4392e0cc2dce}} 
+\index{game::Container$<$ Element $>$@{game::Container$<$ Element $>$}!Add@{Add}}
+\index{Add@{Add}!game::Container$<$ Element $>$@{game::Container$<$ Element $>$}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily template$<$typename Element $>$ \\
+void \mbox{\hyperlink{classgame_1_1_container}{game\+::\+Container}}$<$ Element $>$\+::Add (\begin{DoxyParamCaption}\item[{const Element \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+追加 
+
+
+\begin{DoxyParams}{引数}
+{\em value} & 値\\
+\hline
+\end{DoxyParams}
+被呼び出し関係図\+:
+% FIG 0
+\mbox{\Hypertarget{classgame_1_1_container_a703bba44c280da49e281d0f94c9654e6}\label{classgame_1_1_container_a703bba44c280da49e281d0f94c9654e6}} 
+\index{game::Container$<$ Element $>$@{game::Container$<$ Element $>$}!begin@{begin}}
+\index{begin@{begin}!game::Container$<$ Element $>$@{game::Container$<$ Element $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily template$<$typename Element $>$ \\
+auto \mbox{\hyperlink{classgame_1_1_container}{game\+::\+Container}}$<$ Element $>$\+::begin (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+begin 
+
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgame_1_1_container_a17282785cc279d4df8a8159d78f81b5b}\label{classgame_1_1_container_a17282785cc279d4df8a8159d78f81b5b}} 
+\index{game::Container$<$ Element $>$@{game::Container$<$ Element $>$}!Empty@{Empty}}
+\index{Empty@{Empty}!game::Container$<$ Element $>$@{game::Container$<$ Element $>$}}
+\doxysubsubsection{\texorpdfstring{Empty()}{Empty()}}
+{\footnotesize\ttfamily template$<$typename Element $>$ \\
+bool \mbox{\hyperlink{classgame_1_1_container}{game\+::\+Container}}$<$ Element $>$\+::Empty (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+判定 
+
+\begin{DoxyReturn}{戻り値}
+空
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgame_1_1_container_a06d552277d71361afe867b6efa6a61b2}\label{classgame_1_1_container_a06d552277d71361afe867b6efa6a61b2}} 
+\index{game::Container$<$ Element $>$@{game::Container$<$ Element $>$}!end@{end}}
+\index{end@{end}!game::Container$<$ Element $>$@{game::Container$<$ Element $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily template$<$typename Element $>$ \\
+auto \mbox{\hyperlink{classgame_1_1_container}{game\+::\+Container}}$<$ Element $>$\+::end (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+end 
+
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgame_1_1_container_a02e41ffc777ffaa8a2a1d65168c26aec}\label{classgame_1_1_container_a02e41ffc777ffaa8a2a1d65168c26aec}} 
+\index{game::Container$<$ Element $>$@{game::Container$<$ Element $>$}!Get@{Get}}
+\index{Get@{Get}!game::Container$<$ Element $>$@{game::Container$<$ Element $>$}}
+\doxysubsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily template$<$typename Element $>$ \\
+Element \mbox{\hyperlink{classgame_1_1_container}{game\+::\+Container}}$<$ Element $>$\+::Get (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+取得 
+
+
+\begin{DoxyParams}{引数}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+被呼び出し関係図\+:
+% FIG 1
+\mbox{\Hypertarget{classgame_1_1_container_adff647c4426b098ae042ff28a2dcd0a8}\label{classgame_1_1_container_adff647c4426b098ae042ff28a2dcd0a8}} 
+\index{game::Container$<$ Element $>$@{game::Container$<$ Element $>$}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!game::Container$<$ Element $>$@{game::Container$<$ Element $>$}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily template$<$typename Element $>$ \\
+bool \mbox{\hyperlink{classgame_1_1_container}{game\+::\+Container}}$<$ Element $>$\+::Initialize (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+初期化 
+
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgame_1_1_container_ab4167503f90aefadbd43d4072eec5c8c}\label{classgame_1_1_container_ab4167503f90aefadbd43d4072eec5c8c}} 
+\index{game::Container$<$ Element $>$@{game::Container$<$ Element $>$}!Input@{Input}}
+\index{Input@{Input}!game::Container$<$ Element $>$@{game::Container$<$ Element $>$}}
+\doxysubsubsection{\texorpdfstring{Input()}{Input()}}
+{\footnotesize\ttfamily template$<$typename Element $>$ \\
+bool \mbox{\hyperlink{classgame_1_1_container}{game\+::\+Container}}$<$ Element $>$\+::Input (\begin{DoxyParamCaption}\item[{float}]{delta\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+入力 
+
+
+\begin{DoxyParams}{引数}
+{\em delta\+\_\+time} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgame_1_1_container_a32633433887552d17e3109176e18a035}\label{classgame_1_1_container_a32633433887552d17e3109176e18a035}} 
+\index{game::Container$<$ Element $>$@{game::Container$<$ Element $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!game::Container$<$ Element $>$@{game::Container$<$ Element $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$typename Element $>$ \\
+auto \mbox{\hyperlink{classgame_1_1_container}{game\+::\+Container}}$<$ Element $>$\+::operator() (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+取得 
+
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgame_1_1_container_aedaa4d08664c4e68d3ee0f8b836f1d4a}\label{classgame_1_1_container_aedaa4d08664c4e68d3ee0f8b836f1d4a}} 
+\index{game::Container$<$ Element $>$@{game::Container$<$ Element $>$}!Refresh@{Refresh}}
+\index{Refresh@{Refresh}!game::Container$<$ Element $>$@{game::Container$<$ Element $>$}}
+\doxysubsubsection{\texorpdfstring{Refresh()}{Refresh()}}
+{\footnotesize\ttfamily template$<$typename Element $>$ \\
+void \mbox{\hyperlink{classgame_1_1_container}{game\+::\+Container}}$<$ Element $>$\+::Refresh (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+リフレッシュ 
+
+呼び出し関係図\+:
+% FIG 2
+\mbox{\Hypertarget{classgame_1_1_container_a49e316d622670c72528492b1cc273e9b}\label{classgame_1_1_container_a49e316d622670c72528492b1cc273e9b}} 
+\index{game::Container$<$ Element $>$@{game::Container$<$ Element $>$}!Release@{Release}}
+\index{Release@{Release}!game::Container$<$ Element $>$@{game::Container$<$ Element $>$}}
+\doxysubsubsection{\texorpdfstring{Release()}{Release()}}
+{\footnotesize\ttfamily template$<$typename Element $>$ \\
+bool \mbox{\hyperlink{classgame_1_1_container}{game\+::\+Container}}$<$ Element $>$\+::Release (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+解放 
+
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgame_1_1_container_a73696ab9228f4b6396d99bafe50bd38e}\label{classgame_1_1_container_a73696ab9228f4b6396d99bafe50bd38e}} 
+\index{game::Container$<$ Element $>$@{game::Container$<$ Element $>$}!Render@{Render}}
+\index{Render@{Render}!game::Container$<$ Element $>$@{game::Container$<$ Element $>$}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily template$<$typename Element $>$ \\
+bool \mbox{\hyperlink{classgame_1_1_container}{game\+::\+Container}}$<$ Element $>$\+::Render (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+描画 
+
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgame_1_1_container_a4c1111b367e4c301ba4e218c5b61c90e}\label{classgame_1_1_container_a4c1111b367e4c301ba4e218c5b61c90e}} 
+\index{game::Container$<$ Element $>$@{game::Container$<$ Element $>$}!Update@{Update}}
+\index{Update@{Update}!game::Container$<$ Element $>$@{game::Container$<$ Element $>$}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily template$<$typename Element $>$ \\
+bool \mbox{\hyperlink{classgame_1_1_container}{game\+::\+Container}}$<$ Element $>$\+::Update (\begin{DoxyParamCaption}\item[{float}]{delta\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+更新 
+
+
+\begin{DoxyParams}{引数}
+{\em delta\+\_\+time} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/maila/\+Documents/\+Git\+Hub/\+Tiny\+Game/\+Tiny\+Game/\+Game/\mbox{\hyperlink{_container_8h}{Container.\+h}}\end{DoxyCompactItemize}

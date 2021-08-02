@@ -1,22 +1,189 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="ソース ファイル">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="ヘッダー ファイル">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
     <Filter Include="リソース ファイル">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Base">
+      <UniqueIdentifier>{2a80e3ac-7f11-4f67-bd2f-397abf9d2054}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base\Accessor">
+      <UniqueIdentifier>{cd65bd34-8565-4c8e-aa67-18de43b21f02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base\Behavioral">
+      <UniqueIdentifier>{ac9e403e-a95b-46e2-b16b-2eaefae8e406}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base\Core">
+      <UniqueIdentifier>{2a91a2cd-da52-4daf-b3fb-3be8d5f624fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base\Creational">
+      <UniqueIdentifier>{d2edd702-0d91-46d0-903d-22a135d6394a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base\Interface">
+      <UniqueIdentifier>{cccfce61-7d32-4a31-9328-53ea6fd559af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base\Parameter">
+      <UniqueIdentifier>{d79d4c96-5ebb-467f-b11b-2ebf6b5b65d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base\Structural">
+      <UniqueIdentifier>{4db0e3dd-1ef1-4eeb-96b9-54ba42ed4c78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base\Utility">
+      <UniqueIdentifier>{4508f586-0c7a-4248-bae0-985ede9180fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header\Actor">
+      <UniqueIdentifier>{0246f32b-9d79-41fb-9df8-675d05dc5357}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Gimmick">
+      <UniqueIdentifier>{91f5de8f-efd3-4f08-83d2-34f26a918391}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Scene">
+      <UniqueIdentifier>{701d955e-b244-48ba-974b-e75901ad5d7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Gimmick">
+      <UniqueIdentifier>{9557da25-4d7f-4153-a66d-bcc77c7c0dea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Actor">
+      <UniqueIdentifier>{e0fd47dd-0e78-47a4-a643-98b4a912548a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Scene">
+      <UniqueIdentifier>{8a7392d6-e3a8-4a25-8083-8e6fc4029b4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Actor\Character">
+      <UniqueIdentifier>{b3df993b-9697-4d34-a939-1798e8829286}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Actor\Character">
+      <UniqueIdentifier>{dd2a755f-0bb6-406d-ad22-1f02f0f52d1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Parameter">
+      <UniqueIdentifier>{188ad3fa-23ba-447e-9fbf-6bdb4fa050a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Parameter\Character">
+      <UniqueIdentifier>{36a6034d-70fc-4763-aff5-0fe7d5cf1b85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base\Exception">
+      <UniqueIdentifier>{ccd123bf-2e50-48f3-ab5b-8e39f929f7ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base\Math">
+      <UniqueIdentifier>{12debcba-1a37-4aeb-ba0b-2b6b7581a9d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base\Shape">
+      <UniqueIdentifier>{232f6a9c-0645-4bed-9679-2c0d5a23c400}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>Source</Filter>
     </ClCompile>
+    <ClCompile Include="..\Base\Utility\Timer.cpp">
+      <Filter>Base\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Base\Behavioral\CommandHistory.cpp">
+      <Filter>Base\Behavioral</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Base\Behavioral\StateMachine.cpp">
+      <Filter>Base\Behavioral</Filter>
+    </ClCompile>
+    <ClCompile Include="GameApplication.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Actor\Character\Character.cpp">
+      <Filter>Source\Actor\Character</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Base\Utility\Timer.h">
+      <Filter>Base\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Base\Structural\VisitorAcceptable.h">
+      <Filter>Base\Structural</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Base\Structural\ServiceLocator.h">
+      <Filter>Base\Structural</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Base\Parameter\NameParameter.h">
+      <Filter>Base\Parameter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Base\Interface\Ownable.h">
+      <Filter>Base\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Base\Creational\Factory.h">
+      <Filter>Base\Creational</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Base\Creational\IBuilder.h">
+      <Filter>Base\Creational</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Base\Creational\Creator.h">
+      <Filter>Base\Creational</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Base\Core\Trait.h">
+      <Filter>Base\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Base\Core\Utility.h">
+      <Filter>Base\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Base\Behavioral\CommandHistory.h">
+      <Filter>Base\Behavioral</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Base\Behavioral\Observable.h">
+      <Filter>Base\Behavioral</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Base\Behavioral\Observer.h">
+      <Filter>Base\Behavioral</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Base\Behavioral\State.h">
+      <Filter>Base\Behavioral</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Base\Behavioral\StateMachine.h">
+      <Filter>Base\Behavioral</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Base\Behavioral\Command.h">
+      <Filter>Base\Behavioral</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Base\Accessor\Getter.h">
+      <Filter>Base\Accessor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Base\Accessor\Setter.h">
+      <Filter>Base\Accessor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Base\Accessor\Accessor.h">
+      <Filter>Base\Accessor</Filter>
+    </ClInclude>
+    <ClInclude Include="GameApplication.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor\Character\Character.h">
+      <Filter>Header\Actor\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor\Character\CharacterConfiguration.h">
+      <Filter>Header\Actor\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Container.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Parameter\Character\CharacterState.h">
+      <Filter>Header\Parameter\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Base\Exception\ArgumentException.h">
+      <Filter>Base\Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Base\Exception\FileNotFoundException.h">
+      <Filter>Base\Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Base\Exception\NamelessInstanceExeption.h">
+      <Filter>Base\Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Base\Math\Vector2.h">
+      <Filter>Base\Math</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,0 +1,12 @@
+digraph "C:/Users/maila/Documents/GitHub/TinyGame/TinyGame" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_abba61bbc914433e1c2a75a7082e7133 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_abba61bbc914433e1c2a75a7082e7133.html"];
+    dir_abba61bbc914433e1c2a75a7082e7133 [shape=plaintext label="TinyGame"];
+    dir_4e5098fc5bf43341f4ba0ce8acfd732c [shape=box label="Base" color="red" fillcolor="white" style="filled" URL="dir_4e5098fc5bf43341f4ba0ce8acfd732c.html"];
+    dir_04eaaac0ff0817fe577b47fae5bf9f4f [shape=box label="Game" color="red" fillcolor="white" style="filled" URL="dir_04eaaac0ff0817fe577b47fae5bf9f4f.html"];
+  }
+  dir_04eaaac0ff0817fe577b47fae5bf9f4f->dir_4e5098fc5bf43341f4ba0ce8acfd732c [headlabel="6", labeldistance=1.5 headhref="dir_000019_000001.html"];
+}

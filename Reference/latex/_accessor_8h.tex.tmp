@@ -1,0 +1,38 @@
+\hypertarget{_accessor_8h}{}\doxysection{C\+:/\+Users/maila/\+Documents/\+Git\+Hub/\+Tiny\+Game/\+Tiny\+Game/\+Base/\+Accessor/\+Accessor.h ファイル}
+\label{_accessor_8h}\index{C:/Users/maila/Documents/GitHub/TinyGame/TinyGame/Base/Accessor/Accessor.h@{C:/Users/maila/Documents/GitHub/TinyGame/TinyGame/Base/Accessor/Accessor.h}}
+
+
+ゲッター  
+
+
+{\ttfamily \#include $<$type\+\_\+traits$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+Accessor.\+h の依存先関係図\+:
+% FIG 0
+被依存関係図\+:
+% FIG 1
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classbase_1_1accessor_1_1_accessor}{base\+::accessor\+::\+Accessor$<$ T $>$}}
+\item 
+class \mbox{\hyperlink{classbase_1_1accessor_1_1_accessor_3_01std_1_1shared__ptr_3_01_t_01_4_01_4}{base\+::accessor\+::\+Accessor$<$ std\+::shared\+\_\+ptr$<$ T $>$ $>$}}
+\end{DoxyCompactItemize}
+\doxysubsection*{名前空間}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacebase}{base}}
+\item 
+ \mbox{\hyperlink{namespacebase_1_1accessor}{base\+::accessor}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{詳解}
+ゲッター 
+
+\begin{DoxyAuthor}{著者}
+nameless 
+\end{DoxyAuthor}
+\begin{DoxyDate}{日付}
+unknown  none 
+\end{DoxyDate}

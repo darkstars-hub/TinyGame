@@ -1,0 +1,131 @@
+\hypertarget{namespacebase_1_1core_1_1utility}{}\doxysection{base\+::core\+::utility 名前空間}
+\label{namespacebase_1_1core_1_1utility}\index{base::core::utility@{base::core::utility}}
+\doxysubsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\void \mbox{\hyperlink{namespacebase_1_1core_1_1utility_ab8b92126bf3d0b0d74e1ad51d22807d9}{Safe\+Delete}} (T $\ast$\&ptr)
+\item 
+{\footnotesize template$<$class T , std\+::size\+\_\+t Size$>$ }\\std\+::size\+\_\+t \mbox{\hyperlink{namespacebase_1_1core_1_1utility_a3524b5ca1650d888b4dea12bbe4c5434}{Array\+Size}} (const T(\&)\mbox{[}Size\mbox{]})
+\item 
+{\footnotesize template$<$class... Args$>$ }\\auto \mbox{\hyperlink{namespacebase_1_1core_1_1utility_ae3c2ef696ff0c94c3fdf69705aaf76e2}{Count\+Arguments}} (Args... args)
+\item 
+{\footnotesize template$<$class... Args$>$ }\\auto \mbox{\hyperlink{namespacebase_1_1core_1_1utility_a7fa7a39b15739b8df28c71e82a878144}{Sum}} (Args... args)
+\item 
+{\footnotesize template$<$class... Args$>$ }\\auto \mbox{\hyperlink{namespacebase_1_1core_1_1utility_a1fa96d10990ed45acccf1ecb5838b7d0}{Average}} (Args... args)
+\item 
+{\footnotesize template$<$class To , class From $>$ }\\To \mbox{\hyperlink{namespacebase_1_1core_1_1utility_a2bb9025ca61a019ce8738c2010e2df63}{lexical\+\_\+cast}} (From from)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespacebase_1_1core_1_1utility_a907aed342b74c0f44c752c62751421f4}{Insert\+Ascend}} (std\+::vector$<$ T $>$ \&out, const T \&elem)
+\item 
+{\footnotesize template$<$class T $>$ }\\bool \mbox{\hyperlink{namespacebase_1_1core_1_1utility_ae3543293dd1e43ca3d3476a8e0e66879}{Swap\+Popback}} (std\+::vector$<$ T $>$ \&out, const T \&elem)
+\item 
+{\footnotesize template$<$class T $>$ }\\bool \mbox{\hyperlink{namespacebase_1_1core_1_1utility_ac1583915623f65f372ee3fefe6e9be0b}{Erase\+Find}} (std\+::vector$<$ T $>$ \&out, const T \&elem)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \mbox{\hyperlink{namespacebase_1_1core_1_1utility_a9c620cf20ebf92a423d626bdc084b92c}{Erase\+Remove}} (std\+::vector$<$ T $>$ \&out, const T \&elem)
+\item 
+{\footnotesize template$<$class T , class Condition $>$ }\\void \mbox{\hyperlink{namespacebase_1_1core_1_1utility_a21c96105d387442fb602ebb33598c3be}{Erase\+Remove}} (std\+::vector$<$ T $>$ \&out, Condition condition)
+\item 
+{\footnotesize template$<$typename Key , typename Value $>$ }\\bool \mbox{\hyperlink{namespacebase_1_1core_1_1utility_ae9112247f0aaf424fcfb983306cdcf4f}{Contain}} (Key key, const std\+::unordered\+\_\+map$<$ Key, Value $>$ \&map)
+\item 
+{\footnotesize template$<$class T , class... Args$>$ }\\std\+::shared\+\_\+ptr$<$ T $>$ \mbox{\hyperlink{namespacebase_1_1core_1_1utility_a25783a64f5606e7a760aafa14bb21da2}{Make\+Shared\+With\+Release}} (Args...\+args)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{namespacebase_1_1core_1_1utility_a3524b5ca1650d888b4dea12bbe4c5434}\label{namespacebase_1_1core_1_1utility_a3524b5ca1650d888b4dea12bbe4c5434}} 
+\index{base::core::utility@{base::core::utility}!ArraySize@{ArraySize}}
+\index{ArraySize@{ArraySize}!base::core::utility@{base::core::utility}}
+\doxysubsubsection{\texorpdfstring{ArraySize()}{ArraySize()}}
+{\footnotesize\ttfamily template$<$class T , std\+::size\+\_\+t Size$>$ \\
+std\+::size\+\_\+t base\+::core\+::utility\+::\+Array\+Size (\begin{DoxyParamCaption}\item[{const }]{T(\&)\mbox{[}\+Size\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebase_1_1core_1_1utility_a1fa96d10990ed45acccf1ecb5838b7d0}\label{namespacebase_1_1core_1_1utility_a1fa96d10990ed45acccf1ecb5838b7d0}} 
+\index{base::core::utility@{base::core::utility}!Average@{Average}}
+\index{Average@{Average}!base::core::utility@{base::core::utility}}
+\doxysubsubsection{\texorpdfstring{Average()}{Average()}}
+{\footnotesize\ttfamily template$<$class... Args$>$ \\
+auto base\+::core\+::utility\+::\+Average (\begin{DoxyParamCaption}\item[{Args...}]{args }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+% FIG 0
+\mbox{\Hypertarget{namespacebase_1_1core_1_1utility_ae9112247f0aaf424fcfb983306cdcf4f}\label{namespacebase_1_1core_1_1utility_ae9112247f0aaf424fcfb983306cdcf4f}} 
+\index{base::core::utility@{base::core::utility}!Contain@{Contain}}
+\index{Contain@{Contain}!base::core::utility@{base::core::utility}}
+\doxysubsubsection{\texorpdfstring{Contain()}{Contain()}}
+{\footnotesize\ttfamily template$<$typename Key , typename Value $>$ \\
+bool base\+::core\+::utility\+::\+Contain (\begin{DoxyParamCaption}\item[{Key}]{key,  }\item[{const std\+::unordered\+\_\+map$<$ Key, Value $>$ \&}]{map }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebase_1_1core_1_1utility_ae3c2ef696ff0c94c3fdf69705aaf76e2}\label{namespacebase_1_1core_1_1utility_ae3c2ef696ff0c94c3fdf69705aaf76e2}} 
+\index{base::core::utility@{base::core::utility}!CountArguments@{CountArguments}}
+\index{CountArguments@{CountArguments}!base::core::utility@{base::core::utility}}
+\doxysubsubsection{\texorpdfstring{CountArguments()}{CountArguments()}}
+{\footnotesize\ttfamily template$<$class... Args$>$ \\
+auto base\+::core\+::utility\+::\+Count\+Arguments (\begin{DoxyParamCaption}\item[{Args...}]{args }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+% FIG 1
+\mbox{\Hypertarget{namespacebase_1_1core_1_1utility_ac1583915623f65f372ee3fefe6e9be0b}\label{namespacebase_1_1core_1_1utility_ac1583915623f65f372ee3fefe6e9be0b}} 
+\index{base::core::utility@{base::core::utility}!EraseFind@{EraseFind}}
+\index{EraseFind@{EraseFind}!base::core::utility@{base::core::utility}}
+\doxysubsubsection{\texorpdfstring{EraseFind()}{EraseFind()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool base\+::core\+::utility\+::\+Erase\+Find (\begin{DoxyParamCaption}\item[{std\+::vector$<$ T $>$ \&}]{out,  }\item[{const T \&}]{elem }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebase_1_1core_1_1utility_a21c96105d387442fb602ebb33598c3be}\label{namespacebase_1_1core_1_1utility_a21c96105d387442fb602ebb33598c3be}} 
+\index{base::core::utility@{base::core::utility}!EraseRemove@{EraseRemove}}
+\index{EraseRemove@{EraseRemove}!base::core::utility@{base::core::utility}}
+\doxysubsubsection{\texorpdfstring{EraseRemove()}{EraseRemove()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T , class Condition $>$ \\
+void base\+::core\+::utility\+::\+Erase\+Remove (\begin{DoxyParamCaption}\item[{std\+::vector$<$ T $>$ \&}]{out,  }\item[{Condition}]{condition }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebase_1_1core_1_1utility_a9c620cf20ebf92a423d626bdc084b92c}\label{namespacebase_1_1core_1_1utility_a9c620cf20ebf92a423d626bdc084b92c}} 
+\index{base::core::utility@{base::core::utility}!EraseRemove@{EraseRemove}}
+\index{EraseRemove@{EraseRemove}!base::core::utility@{base::core::utility}}
+\doxysubsubsection{\texorpdfstring{EraseRemove()}{EraseRemove()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void base\+::core\+::utility\+::\+Erase\+Remove (\begin{DoxyParamCaption}\item[{std\+::vector$<$ T $>$ \&}]{out,  }\item[{const T \&}]{elem }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+% FIG 2
+\mbox{\Hypertarget{namespacebase_1_1core_1_1utility_a907aed342b74c0f44c752c62751421f4}\label{namespacebase_1_1core_1_1utility_a907aed342b74c0f44c752c62751421f4}} 
+\index{base::core::utility@{base::core::utility}!InsertAscend@{InsertAscend}}
+\index{InsertAscend@{InsertAscend}!base::core::utility@{base::core::utility}}
+\doxysubsubsection{\texorpdfstring{InsertAscend()}{InsertAscend()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void base\+::core\+::utility\+::\+Insert\+Ascend (\begin{DoxyParamCaption}\item[{std\+::vector$<$ T $>$ \&}]{out,  }\item[{const T \&}]{elem }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebase_1_1core_1_1utility_a2bb9025ca61a019ce8738c2010e2df63}\label{namespacebase_1_1core_1_1utility_a2bb9025ca61a019ce8738c2010e2df63}} 
+\index{base::core::utility@{base::core::utility}!lexical\_cast@{lexical\_cast}}
+\index{lexical\_cast@{lexical\_cast}!base::core::utility@{base::core::utility}}
+\doxysubsubsection{\texorpdfstring{lexical\_cast()}{lexical\_cast()}}
+{\footnotesize\ttfamily template$<$class To , class From $>$ \\
+To base\+::core\+::utility\+::lexical\+\_\+cast (\begin{DoxyParamCaption}\item[{From}]{from }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebase_1_1core_1_1utility_a25783a64f5606e7a760aafa14bb21da2}\label{namespacebase_1_1core_1_1utility_a25783a64f5606e7a760aafa14bb21da2}} 
+\index{base::core::utility@{base::core::utility}!MakeSharedWithRelease@{MakeSharedWithRelease}}
+\index{MakeSharedWithRelease@{MakeSharedWithRelease}!base::core::utility@{base::core::utility}}
+\doxysubsubsection{\texorpdfstring{MakeSharedWithRelease()}{MakeSharedWithRelease()}}
+{\footnotesize\ttfamily template$<$class T , class... Args$>$ \\
+std\+::shared\+\_\+ptr$<$T$>$ base\+::core\+::utility\+::\+Make\+Shared\+With\+Release (\begin{DoxyParamCaption}\item[{Args...}]{args }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebase_1_1core_1_1utility_ab8b92126bf3d0b0d74e1ad51d22807d9}\label{namespacebase_1_1core_1_1utility_ab8b92126bf3d0b0d74e1ad51d22807d9}} 
+\index{base::core::utility@{base::core::utility}!SafeDelete@{SafeDelete}}
+\index{SafeDelete@{SafeDelete}!base::core::utility@{base::core::utility}}
+\doxysubsubsection{\texorpdfstring{SafeDelete()}{SafeDelete()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void base\+::core\+::utility\+::\+Safe\+Delete (\begin{DoxyParamCaption}\item[{T $\ast$\&}]{ptr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebase_1_1core_1_1utility_a7fa7a39b15739b8df28c71e82a878144}\label{namespacebase_1_1core_1_1utility_a7fa7a39b15739b8df28c71e82a878144}} 
+\index{base::core::utility@{base::core::utility}!Sum@{Sum}}
+\index{Sum@{Sum}!base::core::utility@{base::core::utility}}
+\doxysubsubsection{\texorpdfstring{Sum()}{Sum()}}
+{\footnotesize\ttfamily template$<$class... Args$>$ \\
+auto base\+::core\+::utility\+::\+Sum (\begin{DoxyParamCaption}\item[{Args...}]{args }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebase_1_1core_1_1utility_ae3543293dd1e43ca3d3476a8e0e66879}\label{namespacebase_1_1core_1_1utility_ae3543293dd1e43ca3d3476a8e0e66879}} 
+\index{base::core::utility@{base::core::utility}!SwapPopback@{SwapPopback}}
+\index{SwapPopback@{SwapPopback}!base::core::utility@{base::core::utility}}
+\doxysubsubsection{\texorpdfstring{SwapPopback()}{SwapPopback()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool base\+::core\+::utility\+::\+Swap\+Popback (\begin{DoxyParamCaption}\item[{std\+::vector$<$ T $>$ \&}]{out,  }\item[{const T \&}]{elem }\end{DoxyParamCaption})}
+

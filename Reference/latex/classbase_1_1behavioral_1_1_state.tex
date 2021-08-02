@@ -1,0 +1,100 @@
+\hypertarget{classbase_1_1behavioral_1_1_state}{}\doxysection{base\+::behavioral\+::State クラス}
+\label{classbase_1_1behavioral_1_1_state}\index{base::behavioral::State@{base::behavioral::State}}
+
+
+{\ttfamily \#include $<$State.\+h$>$}
+
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbase_1_1behavioral_1_1_state_a9c6aa3f357adda2e7c6903af0f55fd07}{State}} ()=default
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classbase_1_1behavioral_1_1_state_ae665027ae80697ebd6e802c8efb58e81}{$\sim$\+State}} ()=default
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+virtual std\+::string\+\_\+view \mbox{\hyperlink{classbase_1_1behavioral_1_1_state_a895e8f0a971e4aa2d6625c1b4ee553a4}{Get\+Name}} (void) const =0
+\begin{DoxyCompactList}\small\item\em ゲッター \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classbase_1_1behavioral_1_1_state_a2900c2b63f9410d8a6546f88a130d659}{Update}} (float delta\+\_\+time)=0
+\begin{DoxyCompactList}\small\item\em 更新 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classbase_1_1behavioral_1_1_state_ad04d4db8e7334000a7158e15092629ed}{Enter}} (void)=0
+\begin{DoxyCompactList}\small\item\em 開始 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classbase_1_1behavioral_1_1_state_a70865b0669f3ec1923766be3eb4a6cc8}{Exit}} (void)=0
+\begin{DoxyCompactList}\small\item\em 終了 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{classbase_1_1behavioral_1_1_state_a9c6aa3f357adda2e7c6903af0f55fd07}\label{classbase_1_1behavioral_1_1_state_a9c6aa3f357adda2e7c6903af0f55fd07}} 
+\index{base::behavioral::State@{base::behavioral::State}!State@{State}}
+\index{State@{State}!base::behavioral::State@{base::behavioral::State}}
+\doxysubsubsection{\texorpdfstring{State()}{State()}}
+{\footnotesize\ttfamily base\+::behavioral\+::\+State\+::\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+コンストラクタ 
+
+\mbox{\Hypertarget{classbase_1_1behavioral_1_1_state_ae665027ae80697ebd6e802c8efb58e81}\label{classbase_1_1behavioral_1_1_state_ae665027ae80697ebd6e802c8efb58e81}} 
+\index{base::behavioral::State@{base::behavioral::State}!````~State@{$\sim$State}}
+\index{````~State@{$\sim$State}!base::behavioral::State@{base::behavioral::State}}
+\doxysubsubsection{\texorpdfstring{$\sim$State()}{~State()}}
+{\footnotesize\ttfamily virtual base\+::behavioral\+::\+State\+::$\sim$\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+デストラクタ 
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{classbase_1_1behavioral_1_1_state_ad04d4db8e7334000a7158e15092629ed}\label{classbase_1_1behavioral_1_1_state_ad04d4db8e7334000a7158e15092629ed}} 
+\index{base::behavioral::State@{base::behavioral::State}!Enter@{Enter}}
+\index{Enter@{Enter}!base::behavioral::State@{base::behavioral::State}}
+\doxysubsubsection{\texorpdfstring{Enter()}{Enter()}}
+{\footnotesize\ttfamily virtual void base\+::behavioral\+::\+State\+::\+Enter (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+開始 
+
+\mbox{\Hypertarget{classbase_1_1behavioral_1_1_state_a70865b0669f3ec1923766be3eb4a6cc8}\label{classbase_1_1behavioral_1_1_state_a70865b0669f3ec1923766be3eb4a6cc8}} 
+\index{base::behavioral::State@{base::behavioral::State}!Exit@{Exit}}
+\index{Exit@{Exit}!base::behavioral::State@{base::behavioral::State}}
+\doxysubsubsection{\texorpdfstring{Exit()}{Exit()}}
+{\footnotesize\ttfamily virtual void base\+::behavioral\+::\+State\+::\+Exit (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+終了 
+
+\mbox{\Hypertarget{classbase_1_1behavioral_1_1_state_a895e8f0a971e4aa2d6625c1b4ee553a4}\label{classbase_1_1behavioral_1_1_state_a895e8f0a971e4aa2d6625c1b4ee553a4}} 
+\index{base::behavioral::State@{base::behavioral::State}!GetName@{GetName}}
+\index{GetName@{GetName}!base::behavioral::State@{base::behavioral::State}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily virtual std\+::string\+\_\+view base\+::behavioral\+::\+State\+::\+Get\+Name (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+ゲッター 
+
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbase_1_1behavioral_1_1_state_a2900c2b63f9410d8a6546f88a130d659}\label{classbase_1_1behavioral_1_1_state_a2900c2b63f9410d8a6546f88a130d659}} 
+\index{base::behavioral::State@{base::behavioral::State}!Update@{Update}}
+\index{Update@{Update}!base::behavioral::State@{base::behavioral::State}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual void base\+::behavioral\+::\+State\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+更新 
+
+
+\begin{DoxyParams}{引数}
+{\em delta\+\_\+time} & \\
+\hline
+\end{DoxyParams}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/maila/\+Documents/\+Git\+Hub/\+Tiny\+Game/\+Tiny\+Game/\+Base/\+Behavioral/\mbox{\hyperlink{_state_8h}{State.\+h}}\end{DoxyCompactItemize}

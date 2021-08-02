@@ -1,0 +1,101 @@
+\hypertarget{classbase_1_1utility_1_1_timer}{}\doxysection{base\+::utility\+::Timer クラス}
+\label{classbase_1_1utility_1_1_timer}\index{base::utility::Timer@{base::utility::Timer}}
+
+
+{\ttfamily \#include $<$Timer.\+h$>$}
+
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbase_1_1utility_1_1_timer_abacf05c1d9a52ee787cbbb959a8c733f}{Timer}} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbase_1_1utility_1_1_timer_a4de1d324257be92aa22820f729389178}{$\sim$\+Timer}} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classbase_1_1utility_1_1_timer_ae4915374617d4bb4e792871c8006d210}{operator()}} (void) const
+\begin{DoxyCompactList}\small\item\em 現在の時間を返す \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbase_1_1utility_1_1_timer_a5ef41f30a039806e39dd6b03e1e37000}{Initialize}} (float max, bool loop, bool stop=false)
+\begin{DoxyCompactList}\small\item\em 初期化 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classbase_1_1utility_1_1_timer_a69ebb10718b913c2bd030e69930609a6}{Tick}} (float delta\+\_\+time)
+\begin{DoxyCompactList}\small\item\em 更新 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{classbase_1_1utility_1_1_timer_abacf05c1d9a52ee787cbbb959a8c733f}\label{classbase_1_1utility_1_1_timer_abacf05c1d9a52ee787cbbb959a8c733f}} 
+\index{base::utility::Timer@{base::utility::Timer}!Timer@{Timer}}
+\index{Timer@{Timer}!base::utility::Timer@{base::utility::Timer}}
+\doxysubsubsection{\texorpdfstring{Timer()}{Timer()}}
+{\footnotesize\ttfamily base\+::utility\+::\+Timer\+::\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+コンストラクタ 
+
+\mbox{\Hypertarget{classbase_1_1utility_1_1_timer_a4de1d324257be92aa22820f729389178}\label{classbase_1_1utility_1_1_timer_a4de1d324257be92aa22820f729389178}} 
+\index{base::utility::Timer@{base::utility::Timer}!````~Timer@{$\sim$Timer}}
+\index{````~Timer@{$\sim$Timer}!base::utility::Timer@{base::utility::Timer}}
+\doxysubsubsection{\texorpdfstring{$\sim$Timer()}{~Timer()}}
+{\footnotesize\ttfamily base\+::utility\+::\+Timer\+::$\sim$\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+デストラクタ 
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{classbase_1_1utility_1_1_timer_a5ef41f30a039806e39dd6b03e1e37000}\label{classbase_1_1utility_1_1_timer_a5ef41f30a039806e39dd6b03e1e37000}} 
+\index{base::utility::Timer@{base::utility::Timer}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!base::utility::Timer@{base::utility::Timer}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void base\+::utility\+::\+Timer\+::\+Initialize (\begin{DoxyParamCaption}\item[{float}]{max,  }\item[{bool}]{loop,  }\item[{bool}]{stop = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+初期化 
+
+
+\begin{DoxyParams}{引数}
+{\em max} & \\
+\hline
+{\em loop} & \\
+\hline
+{\em stop} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbase_1_1utility_1_1_timer_ae4915374617d4bb4e792871c8006d210}\label{classbase_1_1utility_1_1_timer_ae4915374617d4bb4e792871c8006d210}} 
+\index{base::utility::Timer@{base::utility::Timer}!operator()@{operator()}}
+\index{operator()@{operator()}!base::utility::Timer@{base::utility::Timer}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily float base\+::utility\+::\+Timer\+::operator() (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+現在の時間を返す 
+
+\mbox{\Hypertarget{classbase_1_1utility_1_1_timer_a69ebb10718b913c2bd030e69930609a6}\label{classbase_1_1utility_1_1_timer_a69ebb10718b913c2bd030e69930609a6}} 
+\index{base::utility::Timer@{base::utility::Timer}!Tick@{Tick}}
+\index{Tick@{Tick}!base::utility::Timer@{base::utility::Timer}}
+\doxysubsubsection{\texorpdfstring{Tick()}{Tick()}}
+{\footnotesize\ttfamily bool base\+::utility\+::\+Timer\+::\+Tick (\begin{DoxyParamCaption}\item[{float}]{delta\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+更新 
+
+
+\begin{DoxyParams}{引数}
+{\em delta\+\_\+time} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+指定値に到達
+\end{DoxyReturn}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/maila/\+Documents/\+Git\+Hub/\+Tiny\+Game/\+Tiny\+Game/\+Base/\+Utility/\mbox{\hyperlink{_timer_8h}{Timer.\+h}}\item 
+C\+:/\+Users/maila/\+Documents/\+Git\+Hub/\+Tiny\+Game/\+Tiny\+Game/\+Base/\+Utility/\mbox{\hyperlink{_timer_8cpp}{Timer.\+cpp}}\end{DoxyCompactItemize}

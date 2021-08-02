@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TinyGame: C:/Users/maila/Documents/GitHub/TinyGame/TinyGame/Base/Interface/Ownable.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TinyGame
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_abba61bbc914433e1c2a75a7082e7133.html">TinyGame</a></li><li class="navelem"><a class="el" href="dir_4e5098fc5bf43341f4ba0ce8acfd732c.html">Base</a></li><li class="navelem"><a class="el" href="dir_57fe48a3bd20ed6960eb018e2cf716ef.html">Interface</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Ownable.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_ownable_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BASE_INTERFACE_OWNABLE_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define BASE_INTERFACE_OWNABLE_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="namespacebase_1_1interface.html">    8</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebase_1_1interface.html">base::interface</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Owner&gt;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classbase_1_1interface_1_1_ownable.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbase_1_1interface_1_1_ownable.html">Ownable</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    std::weak_ptr&lt;Owner&gt; _owner;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classbase_1_1interface_1_1_ownable.html#a9e7ce65c6287788dc9197c6cb2cde054">   20</a></span>&#160;    std::shared_ptr&lt;Owner&gt; <a class="code" href="classbase_1_1interface_1_1_ownable.html#a9e7ce65c6287788dc9197c6cb2cde054">GetOwner</a>(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">if</span> (<span class="keyword">auto</span> ptr = _owner.lock()) {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="keywordflow">return</span> ptr;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        } <span class="comment">// if</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classbase_1_1interface_1_1_ownable.html#ab0215e745fd65d377a9123cdcfdc2a9f">   30</a></span>&#160;    <a class="code" href="classbase_1_1interface_1_1_ownable.html#ab0215e745fd65d377a9123cdcfdc2a9f">Ownable</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classbase_1_1interface_1_1_ownable.html#ae944e673dd336f0834d0c8dbce8ceb83">   34</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classbase_1_1interface_1_1_ownable.html#ae944e673dd336f0834d0c8dbce8ceb83">~Ownable</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classbase_1_1interface_1_1_ownable.html#a2776766e88898316149b046d2287f139">   39</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classbase_1_1interface_1_1_ownable.html#a2776766e88898316149b046d2287f139">SetOwner</a>(<span class="keyword">const</span> std::shared_ptr&lt;Owner&gt;&amp; ptr) {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        this-&gt;_owner = ptr;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif // !BASE_INTERFACE_OWNABLE_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassbase_1_1interface_1_1_ownable_html_a9e7ce65c6287788dc9197c6cb2cde054"><div class="ttname"><a href="classbase_1_1interface_1_1_ownable.html#a9e7ce65c6287788dc9197c6cb2cde054">base::interface::Ownable::GetOwner</a></div><div class="ttdeci">std::shared_ptr&lt; Owner &gt; GetOwner(void) const</div><div class="ttdoc">ゲッター</div><div class="ttdef"><b>Definition:</b> Ownable.h:20</div></div>
+<div class="ttc" id="aclassbase_1_1interface_1_1_ownable_html_ab0215e745fd65d377a9123cdcfdc2a9f"><div class="ttname"><a href="classbase_1_1interface_1_1_ownable.html#ab0215e745fd65d377a9123cdcfdc2a9f">base::interface::Ownable::Ownable</a></div><div class="ttdeci">Ownable()=default</div><div class="ttdoc">コンストラクタ</div></div>
+<div class="ttc" id="aclassbase_1_1interface_1_1_ownable_html"><div class="ttname"><a href="classbase_1_1interface_1_1_ownable.html">base::interface::Ownable</a></div><div class="ttdef"><b>Definition:</b> Ownable.h:10</div></div>
+<div class="ttc" id="anamespacebase_1_1interface_html"><div class="ttname"><a href="namespacebase_1_1interface.html">base::interface</a></div><div class="ttdef"><b>Definition:</b> Ownable.h:8</div></div>
+<div class="ttc" id="aclassbase_1_1interface_1_1_ownable_html_ae944e673dd336f0834d0c8dbce8ceb83"><div class="ttname"><a href="classbase_1_1interface_1_1_ownable.html#ae944e673dd336f0834d0c8dbce8ceb83">base::interface::Ownable::~Ownable</a></div><div class="ttdeci">virtual ~Ownable()=default</div><div class="ttdoc">デストラクタ</div></div>
+<div class="ttc" id="aclassbase_1_1interface_1_1_ownable_html_a2776766e88898316149b046d2287f139"><div class="ttname"><a href="classbase_1_1interface_1_1_ownable.html#a2776766e88898316149b046d2287f139">base::interface::Ownable::SetOwner</a></div><div class="ttdeci">void SetOwner(const std::shared_ptr&lt; Owner &gt; &amp;ptr)</div><div class="ttdoc">セッター</div><div class="ttdef"><b>Definition:</b> Ownable.h:39</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

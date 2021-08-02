@@ -1,0 +1,51 @@
+\hypertarget{_utility_8h}{}\doxysection{C\+:/\+Users/maila/\+Documents/\+Git\+Hub/\+Tiny\+Game/\+Tiny\+Game/\+Base/\+Core/\+Utility.h ファイル}
+\label{_utility_8h}\index{C:/Users/maila/Documents/GitHub/TinyGame/TinyGame/Base/Core/Utility.h@{C:/Users/maila/Documents/GitHub/TinyGame/TinyGame/Base/Core/Utility.h}}
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$random$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+Utility.\+h の依存先関係図\+:
+% FIG 0
+被依存関係図\+:
+% FIG 1
+\doxysubsection*{名前空間}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacebase}{base}}
+\item 
+ \mbox{\hyperlink{namespacebase_1_1core}{base\+::core}}
+\item 
+ \mbox{\hyperlink{namespacebase_1_1core_1_1utility}{base\+::core\+::utility}}
+\end{DoxyCompactItemize}
+\doxysubsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\void \mbox{\hyperlink{namespacebase_1_1core_1_1utility_ab8b92126bf3d0b0d74e1ad51d22807d9}{base\+::core\+::utility\+::\+Safe\+Delete}} (T $\ast$\&ptr)
+\item 
+{\footnotesize template$<$class T , std\+::size\+\_\+t Size$>$ }\\std\+::size\+\_\+t \mbox{\hyperlink{namespacebase_1_1core_1_1utility_a3524b5ca1650d888b4dea12bbe4c5434}{base\+::core\+::utility\+::\+Array\+Size}} (const T(\&)\mbox{[}Size\mbox{]})
+\item 
+{\footnotesize template$<$class... Args$>$ }\\auto \mbox{\hyperlink{namespacebase_1_1core_1_1utility_ae3c2ef696ff0c94c3fdf69705aaf76e2}{base\+::core\+::utility\+::\+Count\+Arguments}} (Args... args)
+\item 
+{\footnotesize template$<$class... Args$>$ }\\auto \mbox{\hyperlink{namespacebase_1_1core_1_1utility_a7fa7a39b15739b8df28c71e82a878144}{base\+::core\+::utility\+::\+Sum}} (Args... args)
+\item 
+{\footnotesize template$<$class... Args$>$ }\\auto \mbox{\hyperlink{namespacebase_1_1core_1_1utility_a1fa96d10990ed45acccf1ecb5838b7d0}{base\+::core\+::utility\+::\+Average}} (Args... args)
+\item 
+{\footnotesize template$<$class To , class From $>$ }\\To \mbox{\hyperlink{namespacebase_1_1core_1_1utility_a2bb9025ca61a019ce8738c2010e2df63}{base\+::core\+::utility\+::lexical\+\_\+cast}} (From from)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespacebase_1_1core_1_1utility_a907aed342b74c0f44c752c62751421f4}{base\+::core\+::utility\+::\+Insert\+Ascend}} (std\+::vector$<$ T $>$ \&out, const T \&elem)
+\item 
+{\footnotesize template$<$class T $>$ }\\bool \mbox{\hyperlink{namespacebase_1_1core_1_1utility_ae3543293dd1e43ca3d3476a8e0e66879}{base\+::core\+::utility\+::\+Swap\+Popback}} (std\+::vector$<$ T $>$ \&out, const T \&elem)
+\item 
+{\footnotesize template$<$class T $>$ }\\bool \mbox{\hyperlink{namespacebase_1_1core_1_1utility_ac1583915623f65f372ee3fefe6e9be0b}{base\+::core\+::utility\+::\+Erase\+Find}} (std\+::vector$<$ T $>$ \&out, const T \&elem)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \mbox{\hyperlink{namespacebase_1_1core_1_1utility_a9c620cf20ebf92a423d626bdc084b92c}{base\+::core\+::utility\+::\+Erase\+Remove}} (std\+::vector$<$ T $>$ \&out, const T \&elem)
+\item 
+{\footnotesize template$<$class T , class Condition $>$ }\\void \mbox{\hyperlink{namespacebase_1_1core_1_1utility_a21c96105d387442fb602ebb33598c3be}{base\+::core\+::utility\+::\+Erase\+Remove}} (std\+::vector$<$ T $>$ \&out, Condition condition)
+\item 
+{\footnotesize template$<$typename Key , typename Value $>$ }\\bool \mbox{\hyperlink{namespacebase_1_1core_1_1utility_ae9112247f0aaf424fcfb983306cdcf4f}{base\+::core\+::utility\+::\+Contain}} (Key key, const std\+::unordered\+\_\+map$<$ Key, Value $>$ \&map)
+\item 
+{\footnotesize template$<$class T , class... Args$>$ }\\std\+::shared\+\_\+ptr$<$ T $>$ \mbox{\hyperlink{namespacebase_1_1core_1_1utility_a25783a64f5606e7a760aafa14bb21da2}{base\+::core\+::utility\+::\+Make\+Shared\+With\+Release}} (Args...\+args)
+\end{DoxyCompactItemize}

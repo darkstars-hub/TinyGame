@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TinyGame: C:/Users/maila/Documents/GitHub/TinyGame/TinyGame/Base/Exception/ArgumentException.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TinyGame
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_abba61bbc914433e1c2a75a7082e7133.html">TinyGame</a></li><li class="navelem"><a class="el" href="dir_4e5098fc5bf43341f4ba0ce8acfd732c.html">Base</a></li><li class="navelem"><a class="el" href="dir_fa4486ed66338f793781550d63dc28f0.html">Exception</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ArgumentException.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_argument_exception_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef BASE_EXCEPTION_ARGUMENT_EXEPTION_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define BASE_EXCEPTION_ARGUMENT_EXEPTION_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;exception&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="namespacebase_1_1exception.html">   16</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebase_1_1exception.html">base::exception</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classbase_1_1exception_1_1_argument_exception.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbase_1_1exception_1_1_argument_exception.html">ArgumentException</a> : <span class="keyword">public</span> std::exception {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    std::string _message;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classbase_1_1exception_1_1_argument_exception.html#af56eb80cd94a5cec3e2cf2a02a14257f">   26</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classbase_1_1exception_1_1_argument_exception.html#af56eb80cd94a5cec3e2cf2a02a14257f">ArgumentException</a>(<span class="keyword">const</span> std::string&amp; message) :</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        _message(message) {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classbase_1_1exception_1_1_argument_exception.html#a464de9c669a41f41da754b5b1c697448">   33</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classbase_1_1exception_1_1_argument_exception.html#a464de9c669a41f41da754b5b1c697448">~ArgumentException</a>() noexcept {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classbase_1_1exception_1_1_argument_exception.html#a827d26bc7a3eaf6ed46639154dc16709">   40</a></span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classbase_1_1exception_1_1_argument_exception.html#a827d26bc7a3eaf6ed46639154dc16709">what</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> noexcept {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">return</span> this-&gt;_message.c_str();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif // !BASE_EXCEPTION_ARGUMENT_EXEPTION_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassbase_1_1exception_1_1_argument_exception_html"><div class="ttname"><a href="classbase_1_1exception_1_1_argument_exception.html">base::exception::ArgumentException</a></div><div class="ttdef"><b>Definition:</b> ArgumentException.h:17</div></div>
+<div class="ttc" id="anamespacebase_1_1exception_html"><div class="ttname"><a href="namespacebase_1_1exception.html">base::exception</a></div><div class="ttdef"><b>Definition:</b> ArgumentException.h:16</div></div>
+<div class="ttc" id="aclassbase_1_1exception_1_1_argument_exception_html_af56eb80cd94a5cec3e2cf2a02a14257f"><div class="ttname"><a href="classbase_1_1exception_1_1_argument_exception.html#af56eb80cd94a5cec3e2cf2a02a14257f">base::exception::ArgumentException::ArgumentException</a></div><div class="ttdeci">ArgumentException(const std::string &amp;message)</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> ArgumentException.h:26</div></div>
+<div class="ttc" id="aclassbase_1_1exception_1_1_argument_exception_html_a827d26bc7a3eaf6ed46639154dc16709"><div class="ttname"><a href="classbase_1_1exception_1_1_argument_exception.html#a827d26bc7a3eaf6ed46639154dc16709">base::exception::ArgumentException::what</a></div><div class="ttdeci">virtual const char * what(void) const noexcept</div><div class="ttdoc">メッセージ</div><div class="ttdef"><b>Definition:</b> ArgumentException.h:40</div></div>
+<div class="ttc" id="aclassbase_1_1exception_1_1_argument_exception_html_a464de9c669a41f41da754b5b1c697448"><div class="ttname"><a href="classbase_1_1exception_1_1_argument_exception.html#a464de9c669a41f41da754b5b1c697448">base::exception::ArgumentException::~ArgumentException</a></div><div class="ttdeci">virtual ~ArgumentException() noexcept</div><div class="ttdoc">デストラクタ</div><div class="ttdef"><b>Definition:</b> ArgumentException.h:33</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

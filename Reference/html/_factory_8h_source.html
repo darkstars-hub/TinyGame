@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TinyGame: C:/Users/maila/Documents/GitHub/TinyGame/TinyGame/Base/Creational/Factory.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TinyGame
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_abba61bbc914433e1c2a75a7082e7133.html">TinyGame</a></li><li class="navelem"><a class="el" href="dir_4e5098fc5bf43341f4ba0ce8acfd732c.html">Base</a></li><li class="navelem"><a class="el" href="dir_6020ac65bcfcac58256e68a0869e199c.html">Creational</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Factory.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_factory_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BASE_CREATIONAL_FACTORY_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define BASE_CREATIONAL_FACTORY_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_creator_8h.html">Creator.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebase_1_1creational.html">base::creational</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classbase_1_1creational_1_1_factory.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbase_1_1creational_1_1_factory.html">Factory</a> {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    std::unordered_map&lt;std::string, std::unique_ptr&lt;base::creational::ICreator&lt;T&gt;&gt;&gt; _creators;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Derived, <span class="keyword">typename</span> Builder&gt;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classbase_1_1creational_1_1_factory.html#a7d77b30b3efcc82446db6edf44218cdd">   19</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classbase_1_1creational_1_1_factory.html#a7d77b30b3efcc82446db6edf44218cdd">Register</a>(<span class="keyword">const</span> std::string&amp; key, <span class="keyword">const</span> std::shared_ptr&lt;Builder&gt;&amp; builder) {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        _creators[key] = std::make_unique&lt;base::creational::Creator&lt;T, Derived, Builder&gt;&gt;(builder);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classbase_1_1creational_1_1_factory.html#a603af3ae2ed21f8b15299eb9b20662b7">   27</a></span>&#160;    std::shared_ptr&lt;T&gt; <a class="code" href="classbase_1_1creational_1_1_factory.html#a603af3ae2ed21f8b15299eb9b20662b7">Create</a>(<span class="keyword">const</span> std::string&amp; key)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">return</span> _creators.at(key)-&gt;Create();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif // !BASE_CREATIONAL_FACTORY_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassbase_1_1creational_1_1_factory_html_a7d77b30b3efcc82446db6edf44218cdd"><div class="ttname"><a href="classbase_1_1creational_1_1_factory.html#a7d77b30b3efcc82446db6edf44218cdd">base::creational::Factory::Register</a></div><div class="ttdeci">void Register(const std::string &amp;key, const std::shared_ptr&lt; Builder &gt; &amp;builder)</div><div class="ttdef"><b>Definition:</b> Factory.h:19</div></div>
+<div class="ttc" id="aclassbase_1_1creational_1_1_factory_html_a603af3ae2ed21f8b15299eb9b20662b7"><div class="ttname"><a href="classbase_1_1creational_1_1_factory.html#a603af3ae2ed21f8b15299eb9b20662b7">base::creational::Factory::Create</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; Create(const std::string &amp;key) const</div><div class="ttdoc">作成</div><div class="ttdef"><b>Definition:</b> Factory.h:27</div></div>
+<div class="ttc" id="anamespacebase_1_1creational_html"><div class="ttname"><a href="namespacebase_1_1creational.html">base::creational</a></div><div class="ttdef"><b>Definition:</b> Creator.h:10</div></div>
+<div class="ttc" id="aclassbase_1_1creational_1_1_factory_html"><div class="ttname"><a href="classbase_1_1creational_1_1_factory.html">base::creational::Factory</a></div><div class="ttdef"><b>Definition:</b> Factory.h:14</div></div>
+<div class="ttc" id="a_creator_8h_html"><div class="ttname"><a href="_creator_8h.html">Creator.h</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

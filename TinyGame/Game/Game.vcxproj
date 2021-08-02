@@ -72,6 +72,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -88,6 +89,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>../</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -139,7 +142,42 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\Base\Behavioral\CommandHistory.cpp" />
+    <ClCompile Include="..\Base\Behavioral\StateMachine.cpp" />
+    <ClCompile Include="..\Base\Utility\Timer.cpp" />
+    <ClCompile Include="Actor\Character\Character.cpp" />
+    <ClCompile Include="GameApplication.cpp" />
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Base\Accessor\Accessor.h" />
+    <ClInclude Include="..\Base\Accessor\Getter.h" />
+    <ClInclude Include="..\Base\Accessor\Setter.h" />
+    <ClInclude Include="..\Base\Behavioral\Command.h" />
+    <ClInclude Include="..\Base\Behavioral\CommandHistory.h" />
+    <ClInclude Include="..\Base\Behavioral\Observable.h" />
+    <ClInclude Include="..\Base\Behavioral\Observer.h" />
+    <ClInclude Include="..\Base\Behavioral\State.h" />
+    <ClInclude Include="..\Base\Behavioral\StateMachine.h" />
+    <ClInclude Include="..\Base\Core\Trait.h" />
+    <ClInclude Include="..\Base\Core\Utility.h" />
+    <ClInclude Include="..\Base\Creational\Creator.h" />
+    <ClInclude Include="..\Base\Creational\Factory.h" />
+    <ClInclude Include="..\Base\Creational\IBuilder.h" />
+    <ClInclude Include="..\Base\Exception\ArgumentException.h" />
+    <ClInclude Include="..\Base\Exception\FileNotFoundException.h" />
+    <ClInclude Include="..\Base\Exception\NamelessInstanceExeption.h" />
+    <ClInclude Include="..\Base\Interface\Ownable.h" />
+    <ClInclude Include="..\Base\Math\Vector2.h" />
+    <ClInclude Include="..\Base\Parameter\NameParameter.h" />
+    <ClInclude Include="..\Base\Structural\ServiceLocator.h" />
+    <ClInclude Include="..\Base\Structural\VisitorAcceptable.h" />
+    <ClInclude Include="..\Base\Utility\Timer.h" />
+    <ClInclude Include="Actor\Character\Character.h" />
+    <ClInclude Include="Actor\Character\CharacterConfiguration.h" />
+    <ClInclude Include="Container.h" />
+    <ClInclude Include="GameApplication.h" />
+    <ClInclude Include="Parameter\Character\CharacterState.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

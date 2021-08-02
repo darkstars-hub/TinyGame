@@ -1,0 +1,48 @@
+\hypertarget{classbase_1_1creational_1_1_factory}{}\doxysection{base\+::creational\+::Factory$<$ T $>$ クラステンプレート}
+\label{classbase_1_1creational_1_1_factory}\index{base::creational::Factory$<$ T $>$@{base::creational::Factory$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Factory.\+h$>$}
+
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Derived , typename Builder $>$ }\\void \mbox{\hyperlink{classbase_1_1creational_1_1_factory_a7d77b30b3efcc82446db6edf44218cdd}{Register}} (const std\+::string \&key, const std\+::shared\+\_\+ptr$<$ Builder $>$ \&builder)
+\item 
+std\+::shared\+\_\+ptr$<$ T $>$ \mbox{\hyperlink{classbase_1_1creational_1_1_factory_a603af3ae2ed21f8b15299eb9b20662b7}{Create}} (const std\+::string \&key) const
+\begin{DoxyCompactList}\small\item\em 作成 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{classbase_1_1creational_1_1_factory_a603af3ae2ed21f8b15299eb9b20662b7}\label{classbase_1_1creational_1_1_factory_a603af3ae2ed21f8b15299eb9b20662b7}} 
+\index{base::creational::Factory$<$ T $>$@{base::creational::Factory$<$ T $>$}!Create@{Create}}
+\index{Create@{Create}!base::creational::Factory$<$ T $>$@{base::creational::Factory$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::shared\+\_\+ptr$<$T$>$ \mbox{\hyperlink{classbase_1_1creational_1_1_factory}{base\+::creational\+::\+Factory}}$<$ T $>$\+::Create (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+作成 
+
+
+\begin{DoxyParams}{引数}
+{\em key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbase_1_1creational_1_1_factory_a7d77b30b3efcc82446db6edf44218cdd}\label{classbase_1_1creational_1_1_factory_a7d77b30b3efcc82446db6edf44218cdd}} 
+\index{base::creational::Factory$<$ T $>$@{base::creational::Factory$<$ T $>$}!Register@{Register}}
+\index{Register@{Register}!base::creational::Factory$<$ T $>$@{base::creational::Factory$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Register()}{Register()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename Derived , typename Builder $>$ \\
+void \mbox{\hyperlink{classbase_1_1creational_1_1_factory}{base\+::creational\+::\+Factory}}$<$ T $>$\+::Register (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key,  }\item[{const std\+::shared\+\_\+ptr$<$ Builder $>$ \&}]{builder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/maila/\+Documents/\+Git\+Hub/\+Tiny\+Game/\+Tiny\+Game/\+Base/\+Creational/\mbox{\hyperlink{_factory_8h}{Factory.\+h}}\end{DoxyCompactItemize}
