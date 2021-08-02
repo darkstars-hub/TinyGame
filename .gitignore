@@ -1,0 +1,24 @@
+
+# Debug
+Debug/
+# Release
+Release/
+# .vs
+.vs/
+
+# idb
+*.idb
+
+# pdb
+*.pdb
+
+# obj
+*.obj
+
+# exe
+*.exe
+
+
+
+# lib
+*.lib
