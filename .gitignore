@@ -9,11 +9,16 @@ Debug/
 # Release
 Release/
 
+# x64
+x64/
+
+
 # Undefined
 Undefined/
 
 
 # File
+
 # idb
 *.idb
 

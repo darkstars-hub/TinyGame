@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header\Common">
+      <UniqueIdentifier>{2c2250bd-f8d8-44f0-a046-45d3b1552e85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Framework">
+      <UniqueIdentifier>{ffc58aea-25f0-4d3e-b2f2-d099cb3c9d8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source\Framework">
+      <UniqueIdentifier>{5c43beab-0eb1-497d-8b88-d63556da06ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Clock">
+      <UniqueIdentifier>{bd0c6c9b-1ceb-4c83-9cbb-6e1b0ee97113}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Clock">
+      <UniqueIdentifier>{29e6dd75-9568-46e5-91df-72fd78a419f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Application">
+      <UniqueIdentifier>{a7e175c9-dd1e-4f04-a0f6-aa1c8498d0f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Window">
+      <UniqueIdentifier>{1bf7ea82-4063-4c5b-8d64-a1844f86ab90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Window">
+      <UniqueIdentifier>{13fcb346-dbb3-4002-a4a7-2905086cf61a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Common\Common.h">
+      <Filter>Header\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Framework.h">
+      <Filter>Header\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="TinyLibrary.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\FrameworkInclude.h">
+      <Filter>Header\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\FrameworkConfiguration.h">
+      <Filter>Header\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Clock\Clock.h">
+      <Filter>Header\Clock</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Application.h">
+      <Filter>Header\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\ApplicationInclude.h">
+      <Filter>Header\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Window\Window.h">
+      <Filter>Header\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Window\WindowInclude.h">
+      <Filter>Header\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Clock\ClockInclude.h">
+      <Filter>Header\Clock</Filter>
+    </ClInclude>
+    <ClInclude Include="Window\WindowCreateInfomation.h">
+      <Filter>Header\Window</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Framework\Framework.cpp">
+      <Filter>Source\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Clock\Clock.cpp">
+      <Filter>Source\Clock</Filter>
+    </ClCompile>
+    <ClCompile Include="Window\Window.cpp">
+      <Filter>Source\Window</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
